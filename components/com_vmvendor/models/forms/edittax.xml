@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="primaryfieldset">
+		<field 
+            name="calc_name" 
+            type="text" 
+            label="COM_VMVENDOR_EDITTAX_FORM_TAXNAME" 
+            description="" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"
+			 />        
+		<field name="calc_descr" 
+			type="textarea"
+			label="COM_VMVENDOR_EDITTAX_FORM_TAXDESCR"
+			description="" 
+			class="inputbox" 
+			filter="safehtml" 
+			height="100" 
+			rows="2" 
+			/>
+		<field 
+			name="taxcatselect" 
+			type="taxcatselect" 
+			class="inputbox"
+			label="COM_VMVENDOR_EDITTAX_FORM_TAXPRODUCTCATS" 
+			description="" 
+			filter="safehtml" 
+			multiple="multiple"
+		/>
+		<field 
+			name="calc_kind" 
+			type="list" 
+			class="inputbox required" 
+			filter="url"
+			label="COM_VMVENDOR_EDITTAX_FORM_TAXKIND" 
+			description="COM_VMVENDOR_EDITTAX_FORM_TAXKIND_DESC" 
+			required="true" 
+			 >
+			<option value="">COM_VMVENDOR_EDITTAX_FORM_TAXSELECTKIND</option>
+			<option value="VatTax">COM_VMVENDOR_EDITTAX_FORM_TAXKIND_VATTAX</option>				 
+			<option value="Marge">COM_VMVENDOR_EDITTAX_FORM_TAXKIND_MARGE</option>			 						 
+			<option value="DBTax">COM_VMVENDOR_EDITTAX_FORM_TAXKIND_DBTAX</option>			  	
+			<option value="Tax">COM_VMVENDOR_EDITTAX_FORM_TAXKIND_TAX</option>	  
+			<option value="DATax">COM_VMVENDOR_EDITTAX_FORM_TAXKIND_DATAX</option>			  
+			<option value="DBTaxBill">COM_VMVENDOR_EDITTAX_FORM_TAXKIND_DBTAXBILL</option>
+			<option value="TaxBill">COM_VMVENDOR_EDITTAX_FORM_TAXKIND_TAXBILL</option>
+			<option value="DATaxBill">COM_VMVENDOR_EDITTAX_FORM_TAXKIND_DATAXBILL</option>
+		</field>
+		<field 
+			name="calc_mathop" 
+			type="list" 
+			class="inputbox required" 
+			filter="url"
+			label="COM_VMVENDOR_EDITTAX_FORM_TAXMATHOP" 
+			description="COM_VMVENDOR_EDITTAX_FORM_TAXMATHOP_DESC" 
+			required="true" 
+			 >
+			 <option value="">COM_VMVENDOR_EDITTAX_FORM_TAXSELECTMATHOP</option>
+			 <option value="+%">+%</option>
+			 <option value="-%">-%</option>
+			 <option value="+">+</option>
+			 <option value="-">-</option>
+		</field>
+		<field 
+			name="calc_value" 
+			type="text" 
+			label="COM_VMVENDOR_EDITTAX_FORM_TAXVALUE" 
+			filter="integer" 
+			class="inputbox required validate-numeric" 
+			required="true" 
+			 />
+    </fieldset>
+</form>

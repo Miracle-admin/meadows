@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5" type="plugin" group="vmcustom" method="upgrade">
+	<name>VMCUSTOM_DOWNLOADABLE</name>
+	<version>3.5</version>
+	<creationDate>September 27 2012</creationDate>
+	<author>eKerner.com - Technical Solutions</author>
+	<authorUrl>http://www.ekerner.com/</authorUrl>
+	<copyright>Copyright (C) 2012 - 2015 eKerner.com All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only</license>
+	<description>VMCUSTOM_DOWNLOADABLE_DESC</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_vmcustom_downloadable.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_vmcustom_downloadable.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_vmcustom_downloadable.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_vmcustom_downloadable.sys.ini</language>
+	</languages>
+	<files>
+		<filename plugin="downloadable">downloadable.php</filename>
+		<filename>deliver_media.php</filename>
+		<filename>index.html</filename>
+		<filename>LICENSE.txt</filename>
+		<folder>images</folder>
+	</files>
+	<scriptfile>downloadable.script.php</scriptfile>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="show_in_cart_attrs" type="radio" default="1" label="VMCUSTOM_DOWNLOADABLE_SHOW_IN_ATTRS" description="VMCUSTOM_DOWNLOADABLE_SHOW_IN_ATTRS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

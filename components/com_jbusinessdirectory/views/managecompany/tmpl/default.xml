@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_J_BUSINESSDIRECTORY_MENUITEM_ADD_COMPANY">
+		<message>COM_J_BUSINESSDIRECTORY_MENUITEM_ADD_COMPANY_INFO</message>
+	</layout>
+	<state>
+		<name>controller</name>
+		<description>descr</description>
+		<url>
+			<param name="controller" type="hidden" default="managecompany" />
+
+		</url>
+	</state>
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request">
+				<field name="showSteps" type="radio" class="btn-group btn-group-yesno" default="0" label="Multiple pages" description="Split the business creation process on multiple pages">
+				  <option value="0">No</option>
+				  <option value="1">Yes</option>
+				</field>
+		</fieldset>
+	</fields>
+</metadata>

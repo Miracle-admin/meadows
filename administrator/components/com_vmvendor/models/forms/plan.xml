@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_VMVENDOR_FORM_LBL_PLAN_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="jusergroups" type="usergroup"
+                
+            label="COM_VMVENDOR_FORM_LBL_PLAN_JUSERGROUPS"
+            description="COM_VMVENDOR_FORM_DESC_PLAN_JUSERGROUPS" 
+                
+                
+                 required="true" 
+            multiple="true" /> 
+
+       <field name="commission_pct" type="text" size="40" class="inputbox"
+        
+            label="COM_VMVENDOR_FORM_LBL_PLAN_COMMISSION_PCT"
+            description="COM_VMVENDOR_FORM_DESC_PLAN_COMMISSION_PCT" 
+         default="20" 
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="autopublish" type="radio" size="40" class="radio btn-group btn-group-yesno"
+        
+            label="COM_VMVENDOR_FORM_LBL_PLAN_AUTOPUBLISH"
+            description="COM_VMVENDOR_FORM_DESC_PLAN_AUTOPUBLISH" 
+         default="1" 
+         required="true" 
+		  > <option value="0">JNo</option>
+		  <option value="1">Yes Addition and Edition</option>
+		  <option value="2">Yes Edition only</option>
+		  </field>
+
+       <field name="max_products" type="text" size="40" class="inputbox"
+        
+            label="COM_VMVENDOR_FORM_LBL_PLAN_MAX_PRODUCTS"
+            description="COM_VMVENDOR_FORM_DESC_PLAN_MAX_PRODUCTS" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="max_img" type="text" size="40" class="inputbox"
+        
+            label="COM_VMVENDOR_FORM_LBL_PLAN_MAX_IMG"
+            description="COM_VMVENDOR_FORM_DESC_PLAN_MAX_IMG" 
+         default="4" 
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="max_files" type="text" size="40" class="inputbox"
+        
+            label="COM_VMVENDOR_FORM_LBL_PLAN_MAX_FILES"
+            description="COM_VMVENDOR_FORM_DESC_PLAN_MAX_FILES" 
+         default="4" 
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_VMVENDOR_FORM_LBL_PLAN_CREATED_BY"
+            description="COM_VMVENDOR_FORM_DESC_PLAN_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

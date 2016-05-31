@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+#modal-CatsuggestModal{
+	position: fixed;
+top: 10%;
+left: 50%;
+z-index: 10500;
+width: 600px;
+
+}

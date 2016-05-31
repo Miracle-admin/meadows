@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+iframe {
+	height:500px;
+}
+html {
+	height:500px;
+}
+body {
+	font-family: arial, helvetica, sans-serif;
+	height:500px;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="My Coupons">
+  <message><![CDATA[Link the users' lists.<br>The user can edit or add new lists.<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="coupons-my" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

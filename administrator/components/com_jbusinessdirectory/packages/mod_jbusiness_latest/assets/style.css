@@ -1,0 +1,216 @@
+.module.latestbusiness-box {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CBCCCF;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #FFFFFF inset;
+ 	padding: 10px;
+}
+
+.module.latestbusiness-box {
+    background: none repeat scroll 0 0 #E0E2E4;
+    border-color: #CFD0D1;
+    box-shadow: 0 1px 0 #FFFFFF, 0 2px 3px rgba(0, 0, 0, 0.06) inset, 0 0 2px rgba(0, 0, 0, 0.04) inset;
+    color: #444444;
+    display: block;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.latestbusiness .business-logo{
+	box-shadow: 0 2px 5px #333;
+    float: left;
+    margin: 0 15px 11px 0;
+    max-width: 50px;
+    padding: 2px;
+    width: 20%;
+}
+
+.latestbusiness .business-logo img{
+	width: 100%;
+}
+
+#latestbusiness img{
+	display: inline-block;
+}
+
+.latestbusiness li{
+	display: block;
+	clear: both;
+	margin-bottom: 5px;
+}
+
+.latestbusiness ul{
+	margin: 0;
+}
+
+.latestbusiness a.company-name{
+	display: block;
+	margin-bottom: 5px;
+	line-height: 13px;
+	font-size: 13px;
+} 
+
+.company-box{
+	margin-bottom: 25px;
+	text-align: center;
+	width: 220px;
+	float: left;
+	margin-left: 15px;
+}
+
+.company-box .company-info{
+	background: #fbfbfb;
+}
+
+.company-box p{
+	margin: 0;
+}
+
+.company-box a.company-name{
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 0;
+	margin: 0;
+	float: none;
+}
+
+.company-box .company-options{
+	background-color: #E7E7E7;
+	padding: 10px;
+}
+
+.latestbusiness .company-address{
+	font-size: 13px;
+	line-height: 12px;
+	display: block;
+	padding: 5px 0;
+	margin-bottom: 10px;
+}
+
+.latestbusiness .company-info{
+	line-height: 12px;
+	min-height: 110px;
+	font-size: 12px;
+	padding: 5px 15px;
+}
+
+.latestbusiness .dir-category{
+	diplay: block;
+}
+
+.full-width-logo{
+   background-color: #EAEAEA;
+   position: relative;
+   height: 180px;
+   overflow: hidden;
+}
+
+.full-width-logo img{
+	height: 100%;
+	border: 0px none;
+	width: 100%;
+	min-width: 100%;
+	max-width: none;
+}
+
+.company-box{
+	
+}
+
+
+.latestbusiness .offer-overlay{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: opacity 400ms ease 0s;
+    z-index: 2;
+}
+
+.latestbusiness .company-box:hover .offer-overlay {
+    opacity: 1;
+}
+
+.latestbusiness .offer-overlay .offer-vertical-middle {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+.latestbusiness .offer-overlay .offer-vertical-middle > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.latestbusiness .offer-overlay a {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 3px;
+    opacity: 0;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: scale3d(0, 0, 0);
+    transition: all 400ms ease 0s;
+    vertical-align: middle;
+}
+.latestbusiness:hover .offer-overlay a:hover {
+    background: none repeat scroll 0 0 #333;
+    border-color: #333;
+}
+
+.latestbusiness .offer-overlay:hover a{
+	opacity:1;
+	transform: scale3d(1, 1, 1);
+}
+
+.slider-item{
+	border: 1px solid #CCC;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.slider-item-name{
+	padding: 10px;
+}
+.slider-item-name img{
+	display: inline-block!important;
+	width: auto !important;
+}
+
+.slider-item-name h3{
+	color: #454545;
+    font-size: 15px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 750px) {
+	
+	.full-width-logo{
+		height: auto;
+	}
+	
+	.full-width-logo img{
+		height: auto;
+		min-width: 100%;
+	}
+}

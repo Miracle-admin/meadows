@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="mainfields">
+		<field 
+            name="myname" 
+            type="myname" 
+            label="COM_VM2WISHLISTS_RECOMMEND_YOURNAME" 
+            description="" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  />
+		<field 
+            name="email" 
+            type="email" 
+            label="COM_VM2WISHLISTS_RECOMMEND_RECIPIENTEMAIL" 
+            description="COM_VM2WISHLISTS_RECOMMEND_RECIPIENTEMAIL_DESC" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  />     
+		<field 
+            name="subject" 
+            type="subject" 
+            label="COM_VM2WISHLISTS_RECOMMEND_SUBJECT" 
+            description="COM_VM2WISHLISTS_RECOMMEND_SUBJECT_DESC" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  />        
+		<field 
+			name="message" 
+			type="textarea" 
+			class="inputbox required" 
+			label="COM_VM2WISHLISTS_RECOMMEND_MESSAGE" 
+			description="COM_VM2WISHLISTS_RECOMMEND_MESSAGE_DESC" 
+			filter="safehtml" 
+			height="200" 
+			rows="2" 
+			required="true"  />
+		<field name="copy" type="hidden">
+			<option value="1">COM_VM2WISHLISTS_RECOMMEND_RECEIVECOPY</option>
+		</field>
+		
+    </fieldset>
+</form>

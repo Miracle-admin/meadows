@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="component"
+		label="COM_JBLANCE_COMPONENT_LABEL"
+		description="COM_JBLANCE_COMPONENT_DESC">
+
+	</fieldset>
+
+	<fieldset name="permissions"
+		description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL">
+
+		<field name="rules" type="rules"
+			component="com_jblance"
+			filter="rules"
+			validate="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			section="component" />
+	</fieldset>
+	
+	<fieldset name="emails_prj"
+		description="Project emails"
+		label="Emails Project">
+        <!--1 newclientpostedprojectadminnoti-->
+		<field name="newclientpostedprojectadminnoti" description="Email is sent to the administrator whenever a new client registers and posts a project" type="sql" default="10" label="1.New client posted project(A)" query="SELECT mailid AS value, subject AS newclientpostedprojectadminnoti FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		 <field name="newclientpostedprojectadminnotidis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!--2 newclientpostedproject-->
+		<field name="newclientpostedproject" description="Email is sent to the client upon registeration and posting a new project" type="sql" default="10" label="2.New client posted project(C)" query="SELECT mailid AS value, subject AS newclientpostedproject FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="newclientpostedprojectdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!-- 3 sendEmailValidationNotificationAdmin-->
+		<field name="sendEmailValidationNotificationAdmin" description="Email:email validated notification to administrator." type="sql" default="10" label="3.Email validated notification to administrator." query="SELECT mailid AS value, subject AS sendEmailValidationNotificationAdmin FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendEmailValidationNotificationAdmindis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--4 sendProjectupgradeNotificationAdmin-->
+		<field name="sendProjectupgradeNotificationAdmin" description="Email is sent to the Administrator whenever a client purchases new upsell for his project." type="sql" default="10" label="4.Client purchased an upsell(A)" query="SELECT mailid AS value, subject AS sendProjectupgradeNotificationAdmin FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendProjectupgradeNotificationAdmindis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--5 sendProjectupgradeNotificationUser-->
+		<field name="sendProjectupgradeNotificationUser" description="Email is sent to the User upon the purchase of a new upsell for project." type="sql" default="10" label="5.Client purchased an upsell(C)" query="SELECT mailid AS value, subject AS sendProjectupgradeNotificationUser FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendProjectupgradeNotificationUserdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--6 sendInviteToProjectNotification-->
+		<field name="sendInviteToProjectNotification" description="Email:Project invitation to developer." type="sql" default="10" label="6.Project invitation to developer" query="SELECT mailid AS value, subject AS sendInviteToProjectNotification FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendInviteToProjectNotificationdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--7 sendNewBidNotification-->
+		<field name="sendNewBidNotification" description="Email:New bid notification client." type="sql" default="10" label="7.New bid notification(C)" query="SELECT mailid AS value, subject AS sendNewBidNotification FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendNewBidNotificationdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--8 sendOutBidNotification-->
+		<field name="sendOutBidNotification" description="Email:Somebody bid lower than you." type="sql" default="10" label="8.Lower Bid(D)" query="SELECT mailid AS value, subject AS sendOutBidNotification FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendOutBidNotificationdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!--9 sendBidWonNotification-->
+		<field name="sendBidWonNotification" description="Email:Bid won by developer." type="sql" default="10" label="9.Bid Won(D)" query="SELECT mailid AS value, subject AS sendBidWonNotification FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendBidWonNotificationdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--10 sendProjectDeniedNotification-->
+		<field name="sendProjectDeniedNotification" description="Email:Bidder denied the offer." type="sql" default="10" label="10.Offer Denied" query="SELECT mailid AS value, subject AS sendProjectDeniedNotification FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendProjectDeniedNotificationdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--11 sendProjectAcceptedNotification-->
+		<field name="sendProjectAcceptedNotification" description="Email:Bidder accepted the offer." type="sql" default="10" label="11.Bidder accepted the offer.(C)" query="SELECT mailid AS value, subject AS sendProjectAcceptedNotification FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendProjectAcceptedNotificationdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--12 sendProjectAcceptedNotificationDveloper-->
+		<field name="sendProjectAcceptedNotificationDveloper" description="Email:Client accepted the offer" type="sql" default="10" label="12.Client accepted the offer.(D)" query="SELECT mailid AS value, subject AS sendProjectAcceptedNotificationDveloper FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendProjectAcceptedNotificationDveloperdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--13 sendProjectAcceptedNotificationloosers-->
+		<field name="sendProjectAcceptedNotificationloosers" description="Email:Developer lost the bid." type="sql" default="10" label="13.Mail to bid looser" query="SELECT mailid AS value, subject AS sendProjectAcceptedNotificationloosers FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendProjectAcceptedNotificationloosersdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--14 sendAdminProjectPendingApproval-->
+		<field name="sendAdminProjectPendingApproval" description="Email:Project pending approval(Administrator)." type="sql" default="10" label="14.Project pending approval administrator" query="SELECT mailid AS value, subject AS sendAdminProjectPendingApproval FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendAdminProjectPendingApprovaldis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--15 sendPublisherProjectApproved-->
+		<field name="sendPublisherProjectApproved" description="Email:Project approved." type="sql" default="10" label="15.Project Approved(D)" query="SELECT mailid AS value, subject AS sendPublisherProjectApproved FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendPublisherProjectApproveddis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!--16 sendProjectPaymentCompleteNotification-->
+		<field name="sendProjectPaymentCompleteNotification" description="Email:Project payment complete notification." type="sql" default="10" label="16.Project payment complete notification." query="SELECT mailid AS value, subject AS sendProjectPaymentCompleteNotification FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendProjectPaymentCompleteNotificationdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--17 sendProjectProgressNotification-->
+		<field name="sendProjectProgressNotification" description="Email:Project progress notification.(To do)" type="sql" default="10" label="17.Project progress notification." query="SELECT mailid AS value, subject AS sendProjectProgressNotification FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendProjectProgressNotificationdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!--18 sendWithdrawFundRequest-->
+		<field name="sendWithdrawFundRequest" description="Email:Withdraw fund request to administrator." type="sql" default="10" label="18.Withdraw fund request to administrator." query="SELECT mailid AS value, subject AS sendWithdrawFundRequest FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendWithdrawFundRequestdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--19 sendWithdrawRequestApproved-->
+		<field name="sendWithdrawRequestApproved" description="Email:Withdraw request approved." type="sql" default="10" label="19.Withdraw request approved." query="SELECT mailid AS value, subject AS sendWithdrawRequestApproved FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendWithdrawRequestApproveddis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--20 sendEscrowPaymentReleased-->
+		<field name="sendEscrowPaymentReleased" description="Email:Escrow payment released." type="sql" default="10" label="20.Escrow payment released." query="SELECT mailid AS value, subject AS sendEscrowPaymentReleased FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendEscrowPaymentReleaseddis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!--21 sendEscrowPaymentAccepted-->
+		<field name="sendEscrowPaymentAccepted" description="Email:Escrow payment accepted." type="sql" default="10" label="21.Escrow payment accepted." query="SELECT mailid AS value, subject AS sendEscrowPaymentAccepted FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendEscrowPaymentAccepteddis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!--22 sendAdminDepositFund-->
+		<field name="sendAdminDepositFund" description="Email:deposit fund alert to admin." type="sql" default="10" label="22.Deposit fund alert to admin." query="SELECT mailid AS value, subject AS sendAdminDepositFund FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendAdminDepositFunddis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		
+		<!--23sendUserDepositFundApproved-->
+		<field name="sendUserDepositFundApproved" description="Email:User fund deposit approved." type="sql" default="10" label="23.User fund deposit approved." query="SELECT mailid AS value, subject AS sendUserDepositFundApproved FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendUserDepositFundApproveddis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!--24 sendMessageNotification-->
+		<field name="sendMessageNotification" description="Email:send PM notification to the recipient." type="sql" default="10" label="24.PM notification to the recipient." query="SELECT mailid AS value, subject AS sendMessageNotification FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendMessageNotificationdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--25 sendAdminMessagePendingApproval-->
+		<field name="sendAdminMessagePendingApproval" description="Email:send message pending approval to admin." type="sql" default="10" label="25.Send message pending approval to admin." query="SELECT mailid AS value, subject AS sendAdminMessagePendingApproval FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendAdminMessagePendingApprovaldis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--26 sendReportingDefaultAction-->
+		<field name="sendReportingDefaultAction" description="Email:send reporting default action." type="sql" default="10" label="26.Send reporting default action." query="SELECT mailid AS value, subject AS sendReportingDefaultAction FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="sendReportingDefaultActiondis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+	</fieldset>
+	
+    <fieldset name="emails_sub"
+		description="Subscription emails"
+		label="Emails Subscription">
+		
+	    <!--27 userSubscribedNewPlan-->
+		<field name="userSubscribedNewPlan" description="Email:User Subscribed new plan.(U)" type="sql" default="10" label="1.User subscribed new plan(U)." query="SELECT mailid AS value, subject AS userSubscribedNewPlan FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="userSubscribedNewPlandis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--28 userSubscribedNewPlanAdmin -->
+		<field name="userSubscribedNewPlanAdmin" description="Email:User Subscribed new plan.(A)" type="sql" default="10" label="2.User subscribed new plan(A)." query="SELECT mailid AS value, subject AS userSubscribedNewPlanAdmin FROM #__acymailing_mail WHERE published = '1' AND type='news'" />	
+		
+		<field name="userSubscribedNewPlanAdmindis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--29user updateplan-->
+		<field name="userUpdatedPlan" description="Email:User updated his plan.(A)" type="sql" default="10" label="3.User updated plan(U)." query="SELECT mailid AS value, subject AS userUpdatedPlan FROM #__acymailing_mail WHERE published = '1' AND type='news'" />	
+		
+		<field name="userUpdatedPlandis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--30user updateplan admin-->
+		<field name="userUpdatedPlanAdmin" description="Email:User updated his plan.(A)" type="sql" default="10" label="4.User updated plan(A)." query="SELECT mailid AS value, subject AS userUpdatedPlanAdmin FROM #__acymailing_mail WHERE published = '1' AND type='news'" />	
+		
+		<field name="userUpdatedPlanAdmindis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--31user cancel plan-->
+		<field name="userCanceledPlan" description="Email:User canceled his plan." type="sql" default="10" label="5.User canceled his plan." query="SELECT mailid AS value, subject AS userCanceledPlan FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="userCanceledPlandis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--32user cancel plan admin-->
+		<field name="userCanceledPlanA" description="Email:User canceled his plan.(A)" type="sql" default="10" label="6.User canceled his plan.(A)." query="SELECT mailid AS value, subject AS userCanceledPlanA FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="userCanceledPlanAdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+		<!--33user plan overdue-->
+		<field name="userPlanOverdue" description="Email:User's plan went overdue." type="sql" default="10" label="7.User's plan went overdue." query="SELECT mailid AS value, subject AS userPlanOverdue FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="userPlanOverduedis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!--34user plan overdue admin-->
+		<field name="userPlanOverdueA" description="Email:User's plan went overdue.(A)" type="sql" default="10" label="8.User's plan went overdue.(A)." query="SELECT mailid AS value, subject AS userPlanOverdueA FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="userPlanOverdueAdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		<!-- 35 user added new card-->
+		<field name="addedNewCard" description="Email:User added new card" type="sql" default="10" label="9.User added new credit card." query="SELECT mailid AS value, subject AS addedNewCard FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="addedNewCarddis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+		
+	</fieldset>
+	
+	<fieldset name="emails_cred"
+		description="Credits/marketplace"
+		label="Credit/Funds emails">
+		
+		<!--36. user added funds-->
+		<field name="userAddedFunds" description="Email:User added funds" type="sql" default="10" label="1.User added new funds." query="SELECT mailid AS value, subject AS userAddedFunds FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="userAddedFundsdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		 
+		 <!--37. user added funds(Administrator)-->
+		<field name="userAddedFundsA" description="Email:User added funds administrator" type="sql" default="10" label="2.User added new funds(A)." query="SELECT mailid AS value, subject AS userAddedFundsA FROM #__acymailing_mail WHERE published = '1' AND type='news'" />
+		
+		<field name="userAddedFundsAdis" class="btn-group btn-group-yesno border-bottom" type="radio" default="1" label="" description="">
+         <option value="0">Disabled</option>
+         <option value="1">Enabled</option>
+         </field>
+		
+	</fieldset>	
+</config>
+<!--
+########################################################################################
+The following are a list of all the different types of fields you can add to this file
+They are here for copy pasting - neat eh?
+########################################################################################
+
+http://docs.joomla.org/Calendar_parameter_type
+<field name="mycalendar" type="calendar" default="5-10-2008" label="Select a date" description="" format="%d-%m-%Y" />
+
+http://docs.joomla.org/Category_parameter_type
+<field name="mycategory" type="category" label="Select a category" description="" section="3" />
+
+http://docs.joomla.org/Editors_parameter_type
+<field name="myeditor" type="editors" default="none" label="Select an editor" />
+
+http://docs.joomla.org/Filelist_parameter_type
+<field name="myfile" type="filelist" default="" label="Select a file" description="" directory="administrator" filter="" exclude="" stripext="" />
+
+http://docs.joomla.org/Folderlist_parameter_type
+<field name="myfolder" type="folderlist" default="" label="Select a folder" directory="administrator" filter="" exclude="" stripext="" />
+
+http://docs.joomla.org/Helpsites_parameter_type
+<field name="myhelpsite" type="helpsites" default="" label="Select a help site" description="" />
+
+http://docs.joomla.org/Hidden_parameter_type
+<field name="mysecretvariable" type="hidden" default="" />
+
+http://docs.joomla.org/Imagelist_parameter_type
+<field name="myimage" type="imagelist" default="" label="Select an image" description="" directory="" exclude="" stripext="" />
+
+http://docs.joomla.org/Languages_parameter_type
+<field name="mylanguage" type="languages" client="site" default="en-GB" label="Select a language" description="" />
+
+http://docs.joomla.org/List_parameter_type
+<field name="mylistvalue" type="list" default="" label="Select an option" description="">
+  <option value="0">Option 1</option>
+  <option value="1">Option 2</option>
+</field>
+
+http://docs.joomla.org/Menu_parameter_type
+<field name="mymenu" type="menu" default="mainmenu" label="Select a menu" description="Select a menu" />
+
+http://docs.joomla.org/Menuitem_parameter_type
+<field name="mymenuitem" type="menuitem" default="45" label="Select a menu item" description="Select a menu item" />
+
+http://docs.joomla.org/Password_parameter_type
+<field name="mypassword" type="password" default="secret" label="Enter a password" description="" size="5" />
+
+http://docs.joomla.org/Radio_parameter_type
+<field name="myradiovalue" type="radio" default="0" label="Select an option" description="">
+  <option value="0">1</option>
+  <option value="1">2</option>
+</field>
+
+http://docs.joomla.org/Spacer_parameter_type
+<field type="spacer" default="&lt;b&gt;Advanced parameters&lt;/b&gt;" />
+
+http://docs.joomla.org/Sql_parameter_type
+<field name="myfield" type="sql" default="10" label="Select an article" query="SELECT id, title FROM #__content" key_field=”id” value_field=”title” />
+
+http://docs.joomla.org/Text_parameter_type
+<field name="mytextvalue" type="text" default="Some text" label="Enter some text" description="" size="10" />
+
+http://docs.joomla.org/Textarea_parameter_type
+<field name="mytextarea" type="textarea" default="default" label="Enter some text" description="" rows="10" cols="5" />
+
+http://docs.joomla.org/Timezones_parameter_type
+<field name="mytimezone" type="timezones" default="-10" label="Select a timezone" description="" />
+
+http://docs.joomla.org/Usergroup_parameter_type
+<field name="myusergroups" type="usergroup" default="" label="Select a user group" description="" />
+
+
+ -->

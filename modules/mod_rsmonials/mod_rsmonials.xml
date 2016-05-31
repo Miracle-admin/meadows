@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+	<name>RSMonials Module</name>
+	<author>RS Web Solutions</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>Copyright (c) 2013-2022 RS Web Solutions - Development Team</copyright>
+	<license>@license GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>support@rswebsols.com</authorEmail>
+	<authorUrl>http://www.rswebsols.com</authorUrl>
+	<version>2.2</version>
+	<description>RS-Monials is a Module developed for Joomla! and for RS-Monilals Component. If you do not have the Component please open http://www.rswebsols.com and download it. This will only work if you are using our Rs-Monials Component. Using this module you can able to display testimonials randomly or serially.</description>
+	<files>
+		<filename module="mod_rsmonials">mod_rsmonials.php</filename>
+		<filename>mod_rsmonials.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+            <fieldset name="basic">
+				<field name="rsm_width" type="text" default="150" label="Module Width" description="Display Width of the Module" />
+				<field name="rsm_randchoice" type="text" default="" label="Testimonial ID(s)" description="Specify Testimonial Id(s) separated by comma. Only these specified testimonials will display in the front end. Insert nothing to display all active testimonials." size="60" />
+				<field name="rsm_display" type="list" default="0" label="Display Type" description="How the testimonials will display, Randomly or Serially">
+					<option value="0">Randomly</option>
+					<option value="1">Serially</option>
+				</field>
+				<field name="rsm_align" type="list" default="left" label="Text Alignment" description="Select the alignment of the testimonial text, by default it is 'left' aligned">
+					<option value="justify">Justify</option>
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="right">Right</option>			
+				</field>
+				<field name="rsm_char" type="text" default="300" label="Character Limit" description="Specify the maximum number of characters to dispaly. By Default it is 300. Insert 0 to display all characters." />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="rsm_imagedisplay" type="radio" default="0" label="Display Image" description="Select Yes to display 'Image of Submitter'.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="rsm_image_maxw" type="text" default="100" label="Maximum Image Width" description="Specify the maximum width of the image. By Default it is 100." />
+				<field name="rsm_image_maxh" type="text" default="100" label="Maximum Image Height" description="Specify the maximum height of the image. By Default it is 100." />
+				<field name="rsm_imagealignment" type="list" default="0" label="Image alignment" description="Alignment of the image.">
+					<option value="0">Top-Center</option>
+					<option value="1">Top-Left</option>
+					<option value="2">Top-Right</option>
+					<option value="3">Left Float</option>
+					<option value="4">Right Float</option>
+				</field>
+				<field name="rsm_imagedefault" type="list" default="0" label="Default Image" description="Default image in no user iamge found.">
+					<option value="0">Do not display any image.</option>
+					<option value="1">Display Gray-and-White User image.</option>
+					<option value="2">Display Black-Male image.</option>
+					<option value="3">Display Black-Female image.</option>
+				</field>
+				<field name="rsm_image_border" type="text" default="1px solid #DEDEDE" label="Image Border Style" description="Image border style. By Default it is 1px solid #DEDEDE." />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="rsm_aboutdisplay" type="radio" default="0" label="Display Addition Info" description="Select 'YES' to display additional information. Select 'NO' to hide.">
+					<option value="0">NO</option>
+					<option value="1">YES</option>
+				</field>
+				<field name="rsm_urldisplay" type="radio" default="0" label="Display Website" description="Select 'YES' to display website. Select 'NO' to hide website.">
+					<option value="0">NO</option>
+					<option value="1">YES</option>
+				</field>
+				<field name="rsm_datedisplay" type="radio" default="1" label="Display Date" description="Select 'YES' to display Date. Select 'NO' to hide date.">
+					<option value="0">NO</option>
+					<option value="1">YES</option>
+				</field>
+				<field name="rsm_moredisplay" type="radio" default="0" label="Display 'View More'" description="Select Yes to display 'View More' Link at the end. If you choose 'Yes' please do not forget to specify the following parameter related to 'View More'.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="rsm_moretext" type="text" default="View More &gt;&gt;" label="'View More' Text" description="Enter the 'View More' text of your choice, example: 'More >>', 'View All' etc. etc." size="30" />
+				<field name="rsm_morealign" type="list" default="right" label="'View More' Text Alignment" description="Select the alignment of the 'View More' text, by default it is 'right'">
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="right">Right</option>			
+				</field>
+				<field name="rsm_moreurl" type="text" default="" label="'View More' URL" description="When anyone will click 'View More >>' Link the page will redirect the user to this URL." size="60" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

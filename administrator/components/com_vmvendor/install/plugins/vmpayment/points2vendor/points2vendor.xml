@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="plugin" group="vmpayment" method="upgrade">
+    <name>VM - VMVENDOR Payment - Points2Vendor</name>
+    <creationDate>June 2012</creationDate>
+    <author>Nordmograph studio</author>
+    <authorUrl>http://www.nordmograph.com</authorUrl>
+    <copyright>Copyright (C) 2004-2015 Nordmograph. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.2</version>
+    <description>Rewards AlphaUserPoints to Virtuemart Vendor when an item is identified in a confirmed order. This payment plugin works in background addition with every payment methods. Parameters are to be set in the VMVendor component configuration page.</description>
+    <languages>
+		<language tag="en-GB">en-GB.plg_vmpayment_points2vendor.ini</language>
+		<language tag="fr-FR">fr-FR.plg_vmpayment_points2vendor.ini</language>
+    </languages>
+    <files>
+        <filename plugin="points2vendor">points2vendor.php</filename>
+    </files>
+</extension>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="List of all Auctions">
+  <message></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jauction">
+   <field name="controller" type="text" default="catalog-items" label="controller" description=""/>
+   <field name="task" type="text" default="listing" label="task" description=""/>
+   <field name="type" type="text" default="auction" label="type" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

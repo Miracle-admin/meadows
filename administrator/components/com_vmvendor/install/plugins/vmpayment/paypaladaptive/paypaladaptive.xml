@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="vmpayment" method="upgrade">
+    <name>VM - VMVENDOR Payment - Paypal Adaptive Payments</name>
+    <creationDate>June 2012</creationDate>
+    <author>Nordmograph studio</author>
+    <authorUrl>http://www.nordmograph.com</authorUrl>
+    <copyright>Copyright (C) 2004-2015 Nordmograph. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.0</version>
+    <description></description>
+    <languages>
+		<language tag="en-GB">en-GB.plg_vmpayment_points2vendor.ini</language>
+		<language tag="fr-FR">fr-FR.plg_vmpayment_points2vendor.ini</language>
+    </languages>
+    <files>
+        <filename plugin="points2vendor">points2vendor.php</filename>
+    </files>
+	
+	<params addpath="/administrator/components/com_virtuemart/elements">
+		<param type="vmjpluginwarning" />
+		<param type="spacer" default="VMPAYMENT_PAYPALADAPTIVE_PAYMENT_TITLE" level="level1" />
+		<param type="spacer" default="VMPAYMENT_PAYPALADAPTIVE_PAYMENT_WARNING"   />
+	
+		<param type="spacer" default="" level="level1" />
+		<param type="spacer" default="VMPAYMENT_PAYPALADAPTIVE_PAYMENT_SETTINGS" level="level1" />
+		<param	name="payment_logos" type="vmfiles" label="VMPAYMENT_PAYPALADAPTIVE_LOGOS"
+					description="VMPAYMENT_PAYPALADAPTIVE_LOGOS_DESC"
+					directory="/images/stories/virtuemart/payment"
+					default="default" hide_default="1" hide_none="1"
+					stripext="0"  exclude="^_" />
+					
+		<param type="spacer" default="" level="level1" />
+	<param type="spacer" default="VMPAYMENT_PAYPAL_PARAMS" level="level1" />
+	<param type="text" name="paypal_merchant_email"  size="50" label="VMPAYMENT_PAYPAL_EMAIL"
+             default="your-PayPal-Merchant-email@domain.com" description="VMPAYMENT_PAYPAL_EMAIL_DESC" />
+			 
+		<param name="include_admin" type="radio" default="0" label="Include Admin" description="Excluding admin has 2 advantages: 1- Customer payments can be made using any available Virtuemart Payment methods. 2- Paypal Adaptive Payments in Parallel mode only allows 6 recivers. Excluding admin saves one reciver." >
+	    <option value="0">JNO</option>
+	    <option value="1">JYES</option>
+	</param>
+	<param name="adaptive_method" type="list" default="1" label="Adaptive Method" description="Excluding admin has 2 advantages: 1- Customer payments can be made using any available Virtuemart Payment methods. 2- Paypal Adaptive Payments in Parallel mode only allows 6 recivers. Excluding admin saves one reciver." >
+	    <option value="1">Parallel</option>
+		<option value="2">Changed you are primary receiver</option>
+		<option value="3">Changed seller is primary receiver</option>
+	</param>
+	
+	<param name="who_pays_fees" type="list" default="EACHRECEIVER" label="Who Pays Fees" description="" >
+	    <option value="SENDER">SENDER</option>
+	    <option value="EACHRECEIVER">EACHRECEIVER</option>
+	</param>
+	
+	<param name="payment_type" type="list" default="EACHRECEIVER" label="Who Pays Fees" description="" >
+	    <option value="SENDER">SENDER</option>
+	    <option value="EACHRECEIVER">EACHRECEIVER</option>
+	</param>
+	<param type="text" name="api_userid"  size="50" label="API Userid" default="" description="" />
+	<param type="text" name="api_password"  size="50" label="API Password" default="" description="" />
+	<param type="text" name="api_signature"  size="50" label="API Signature" default="" description="" />
+	<param type="text" name="api_appid"  size="50" label="API Application ID" default="" description="" />
+			 
+			 
+			 
+				
+	</params>			
+</extension>

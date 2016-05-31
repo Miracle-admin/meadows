@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config >
+	<fieldset name="vmvendor" label="General" description="IMPORTANT NOTICE: Rollover most fields titles to have specific information and instructions showing as tooltips!">
+		<field name="profileman" type="list" label="Profile manager" description="A profile manager is not required anymore for VMVendor, but you can enable it if you want to allow your users to separate things, having a public vendor profile and a private user profile. Also it would enable specific features such as Activity Stream announcements for Jomsocial etc..." default="0" >
+					 <option value="0">None</option>
+					 <option value="cb">Community Builder</option>
+					 <option value="js">Jomsocial</option>
+					 <option value="es">EasySocial</option>					 
+		</field>
+				 
+		<field name="vmitemid" type="text" label="Virtuemart Itemid" description="Menu Itemid to Virtuemart products" default="263" />
+				 
+		<field name="date_display" type="text" label="Date Display" description="http://php.net/manual/en/function.date.php - Default is: Y.m.d" default="Y.m.d" />
+				 
+		<field name="naming" type="radio" label="Naming" description="Should VMVMendor component mention your users by their Name or their usernames (those filled in during registration) ?" default="username"  class="radio btn-group">
+					 <option value="name">Name</option>
+					 <option value="username">Username</option>
+		</field>
+				  
+		<field name="allow_deletion" type="list" label="Allow Product Deletion"  default="2" description="Problem with deleting a digital good product is that if some users have purchased it, they might have some downloads left they could not get anymore..." >
+					 <option value="0">JNo</option>
+					 <option value="1">Unpublish only (Recommended if selling digital goods)</option>
+					 <option value="2">Deletion allowed only if no sell (Recommended if selling digital goods)</option>					 
+					 <option value="3">JYes</option>
+				 
+		</field>
+				  
+	
+		<field name="termsurl" type="text" size="40" default="" label="Terms / Conditions Url" description="As you let users upload goods to your server, you should make sure they have the rights and what they upload is their belonging and they allow you to sell it on your shop etc... Leave empty to disable it." />
+				
+		<field name="multilang_mode" type="list" label="Multilanguage behaviour" description="Added products get added only in vendor's front end language Virtuemart DB table or into every languages set in Virtuemart configuration page? If you set it to Every languages, product will be available in every languages but content (title and descriptions) will not be translated" default="0" >
+					 <option value="0">Current language only</option>
+					 <option value="1">Every Virtuemart languages (untranslated)</option>
+		</field>
+		
+		<field name="restricted_group" type="usergrouplist" label="Restricted group" description="Restrain user groups to upload and sell products." multiple="true" default="" />
+		
+<field name="vendor_views_access" type="folderlist" label="Displayable views" directory="../components/com_vmvendor/views" description="Views that are accessible to all users." filter="" exclude="" stripext="" multiple="true" hide_none="" hide_default="1" default="vendorprofile"/>
+				
+	</fieldset>		
+		
+	<fieldset name="products" label="Product forms" description="This tab concerns product addition and edition forms.">
+		 <field name="forbidcatids" type="text" default="" label="Forbidden Categories" description="Add here category IDs separated with coma for categories you don't want people to upload products in.This is usefull when you want to keep some categories for some featured products of yours when having an open marketplace in the rest of the catalogue categories." />
+		<field name="onlycatids" type="text" default="" label="Only Categories" description="Add here category IDs separated with coma for only categories you want people to upload products in.This is usefull when you want to keep some categories for some featured products of yours when having an open marketplace in the rest of the catalogue categories." />
+		<field name="multicat" type="radio" default="0" label="Enable Multicat (new)" description="Allow vendors to post products in multiple categories"  class="radio btn-group btn-group-yesno">
+						<option value="0">Single Multistep</option>
+						<option value="1">Multicat</option>
+		</field>
+		<field name="autopublish" type="radio" default="1" label="Auto Publish" description="Auto Publish submitted products without moderating these before. Enable this if you trust your vendors." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">Yes Addition and Edition</option>
+						<option value="2">Only Edition</option>
+		</field>
+		<field name="show_sku" type="radio" default="0" label="Show Sku" description="Show Sku in forms. Sku is auto genarated: [userid].[Ymd].[His]" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+		</field>
+		<field name="enable_sdesc" type="radio" default="1" label="Enable Short description field" description="If disabled, Product short description will be set using the beginning of the full description. Having 2 descriptions fields might be unfriendly to some users in some cases..." class="radio btn-group btn-group-yesno">
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+		</field>
+		<field name="wysiwyg_prod" type="radio" default="0" label="WYSIWYG for Products" description="Enable Editor in product addition and Edition form for the decription field." class="radio btn-group btn-group-yesno">
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+		</field>
+		<field name="enableweight" type="radio" default="0" label="Enable Weight" description="" class="radio btn-group btn-group-yesno">
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+		</field>
+		<field name="weightunits" type="list" multiple="true" default="KG,G,MG,LB,OZ" label="Allowed Weight Units" description="Select the weight units vendors would find usefull to use. Multiple selection." >
+					<option value="KG">Kilogramme</option>
+					<option value="G">Gramme</option>
+					<option value="MG">Milligramme</option>
+					<option value="LB">Pounds</option>
+					<option value="OZ">Ounce</option>
+		</field>
+		<field name="max_imagefields" type="text" default="4" label="Max Image Fields" description="Allowed number of images per products" />
+				
+		<field name="imagemandatory" type="radio" default="0" label="Image Upload field mandatory" description="If you set Vmvendor to show the image upload field, you can wish to make it mandatory. If enabled , only the first image field is mandatory." class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+
+				</field>
+				
+				<field name="maximgside" type="text" size="10" default="800" label="Max. Image Side size" description="Maximum size of the largest image side in pixels. Maximum size of the largest image side in pixels. If Uploaded image is larger, it will be resized." />
+
+				<field name="thumbqual" type="text" default="90" label="Thumbnail Quality" description="Default: 90. Max: 100" />
+				
+				<field name="enablefiles" type="radio" default="0" label="File Upload field" description="Only enable this if you want your users to sell downoadable goods. This requires plgvm_istraxx_download plugin to have downloadable goods for sale in Virtuemart." class="radio btn-group btn-group-yesno">
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
+				
+				<field name="filemandatory" type="radio" default="0" label="File Upload field mandatory" description="If you set Vmvendor to show the file upload field, you can wish to make it not mandatory. If enabled , only the first file field is mandatory." class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+
+				</field>
+		
+				
+				
+				
+				<field name="allowedexts" type="text" size="60" default="zip,mp3,pdf" label="Allowed File extensions" description="Only for the file submission. Images and Thumbnail are limited to gif, png and jpeg. Add here all the extensions for the file types you allow your vendors to upload. Separate each with a coma." />
+				<field name="maxfilesize" type="text" size="10" default="8000000" label="Max File Size" description="The Maximum upload file size is anyway limited to your server's php.ini file configuration, but here you can set a limit below it. The default 8000000 bytes stand for 8MB." />
+				
+				<field name="max_filefields" type="text" default="4" label="Max File Fields" description="Allowed number of files per products" />
+				
+				<field name="enableprice" type="radio" default="1" label="Enable price" description="If you use VM as a catalog only, you might want to disable Price fields in VMVendor." class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+
+				</field>
+				
+				<field name="enablestock" type="radio" default="1" label="Enable stock" description="If you sell digital products you might want to disable stock." class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+
+				</field>
+				<field name="enablemanufield" type="radio" default="1" label="Enable manufacturer field" description="This field is non mandatory" class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+
+				</field>
+				
+				<field name="cat_suggest" type="list" default="1" label="Category Suggestion" description="In product addition and edition forms, enabling this adds a link next to the category selection field. It allows a user to suggest or add a new product category to the shop. 1st option only sends an email to admin with the suggested category name, description and parent category. 2nd option sends the same mail and adds the category to the shop as an unpublished category. 3rd and last option adds and publishes the new category without notifying admin.">
+					<option value="0">Disable</option>
+					<option value="1">1. Enable as email to admin</option>
+					<option value="2">2. Add to database unpublished</option>
+					<option value="3">3. Add to database published</option>
+				</field>
+		
+		</fieldset>	
+		
+		
+		
+		
+		
+		
+		 <fieldset name="promotion" label="Promotion" description="RSS xml files are stored in /media/vmvendorss/">		
+				
+				<field name="enablerss" type="radio" default="1" label="Enable Vendor RSS" description="Only if Autopublish is on. This genrates a shop RSS feed for each vendor. A RSS feed icon will be available on vendor's user profile." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+				</field>
+				
+				<field name="rsslimit" type="text" default="10" label="RSS Items limit" description="How many products to show in the vendor RSS feed. Default is 10." />
+				
+		
+				
+				<field name="emailnotify_addition" type="radio" default="0" label="Email Notification on addition" description="Automatic email to email address specified below. Email countains links to the added VM product and to the vendor's profile page if applicable. Make sure your smtp server is configured correctly. Email notification is forced if Autopublish parameter is not activated." class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="emailnotify_updated" type="radio" default="0" label="Email Notification on update" description="Automatic email to email address specified below. Email countains links to the added VM product and to the vendor's profile page if applicable. Make sure your smtp server is configured correctly." class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="to" type="text" label="Additional Recipient Email Address" description="Additional Email Address to be notified" />
+
+				</fieldset>
+				
+				
+				
+				
+		
+				<fieldset name="pricing" label="Pricing" description="">
+					<field name="minimum_price" type="text" default="" label="Minimum Price" description="Set a minimum price. Set 0 if you allow free products to be added." />
+					<field name="aup_ratio" type="text" default="1" label="Points/Currency ratio" description="How many points for one of your currency unit." />
+					<field name="commission" type="text" default="40" label="Commission Percentage" description="Percentage of sales that goes to the site admin. This does not actually go to site admin , it is just deducted from the Vendor points reward that goes to vendors. This value can be overriden by the value set in vendor plans." />
+		<field name="tax_mode" type="list" default="0" label="Tax mode" description="As an admin you can create tax(es) rules in Virtuemart administration and set these as 'shared' so they apply to every vendors products. But you can also let vendors create and manage their own taxes. If you set this, vendors will be able to add and edit taxes from their dashboard. These taxes will be set only for their own products but set to every categories, every shopper groups and without time limitation.">
+						<option value="0">Disabled in Dashboard</option>
+						<option value="1">Shared Tax (recommended)</option>
+						<option value="2">Vendor administrated taxes (beta)</option>
+		</field>	
+		<field name="enable_discount" type="radio" default="0" label="Allow discount price" description="Allow vendors to set discount prices in addition of the original price. The Discount price will overide the final price" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+		</field>		
+	</fieldset>
+	<fieldset name="dashboard" label="Dashboard" description="The Dashboard page is a private page for Vendors showing their latest sells with customer contacts and statistics.">
+					<field name="customercontactform" type="list" default="1" label="Customer contact form" description="">
+						<option value="1">Email Form</option>
+						<option value="11">Email Form with Site admin email in CCi</option>
+						<option value="2">PMS form (Jomsocial or Easysocial)</option>
+					</field>
+					<field name="show_postalinfo" type="radio" default="1" label="Show Postal information" description="Show customer postal information. This could be useless if you only sell digital goods." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="allow_orderstatuschange" type="radio" default="1" label="Allow Orders Status Change" description="Enabling this allows vendors to change theirc customers orders status  from C (confirmed) to S(shipped). This is not supported if you don't use C and S status codes for Confirmed and Shipped. This is not recommended for downloadable goods as the st42_download (more recently called plgvm_istraxx_download ) plugin changes the status from C to S automaticaly when the forsale file has been downloaded." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">Only for products without forSale files</option>
+					</field>
+					
+					<field name="show_worldmapstats" type="radio" default="1" label="Show Worldmap stats" description="If your site is local, within the same country. There is no point displaying a world map in your vendors dashboards" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					
+					
+					<field name="update_notifies_admin" type="radio" default="1" label="Notify Admin" description="Notify admin on order item status changed from confirmed to shipped or cancel" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="update_notifies_customer" type="radio" default="1" label="Notify Customer" description="Notify customer on order item status changed from confirmed to shipped or cancel" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="manage_reviews" type="radio" default="1" label="Reviews management" description="If enabled, vendor will be able to publish or delete reviews on own products." class="radio btn-group btn-group-yesno">
+						<option value="0">Disabled</option>
+						<option value="1">Enabled</option>
+					</field>
+					<field name="show_pointstab" type="radio" default="1" label="Show Points Tab" description="Show or hide points tab." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+				
+				</fieldset>
+				
+				<fieldset name="vendor_profile" label="Vendor Profile" description="">
+					<field name="vendorcontactform" type="radio" default="1" label="Vendor contact form" description="PMS can only be enabled if you have Jomsocial or EasySocial enabled" class="radio btn-group">
+						<option value="1">Email Form</option>
+						<option value="2">PMS form</option>
+					</field>
+					<field name="profileitemid" type="text" label="Social Profile Itemid" description="Menu Item id to your user profiles (CB, Jomsocial or EasySocial)" default="263" />
+					<field name="wysiwyg_prof" type="radio" default="1" label="WYSIWYG Editor for Profile" description="Enable Editor in profile." class="radio btn-group btn-group-yesno">
+						<option value="0">Disabled</option>
+						<option value="1">Enabled</option>
+					</field>
+					<field name="paypalemail_field" type="radio" default="1" label="Paypal Email field" description="Show paypal email field in Vendor profile edition form. This field can be used in the Vendor Points2Paypal module form to pre fill the paypal email field and in upcoming Paypal Adaptive Payment plugin." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+
+					
+					<field name="facebooklike" type="radio" default="1" label="Facebook Like" description="" class="radio btn-group btn-group-yesno">
+						<option value="0">No</option>
+						<option value="1">Iframe</option>
+						<option value="2">HTML5</option>
+					</field>
+					<field name="appid" type="text" default="" label="Facebook App ID" description="Required to use Html5 and send button (recommended)" />
+					<field name="fb_width" type="text" default="80" label="FB width" description="Required to use Html5 and send button (recommended)" />
+					<field name="fb_action" type="radio" default="like" label="FB Action" description="" class="radio btn-group">
+						<option value="like">Like</option>
+						<option value="recommend">Recommend</option>
+					</field>
+					<field name="twitter" type="radio" default="1" label="Twitter" description="" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="googleplus" type="radio" default="1" label="Google Plus" description="" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+
+					<field name="linkedin" type="radio" default="1" label="LinkedIn" description="" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					
+					<field name="products_category_link" type="radio" default="1" label="Show Products category link" description="Add the hypertext link to product category on vendor profile products list" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="products_category_filter" type="list" default="1" label="Show Products category filter" description="If vendor has more than one product, you can enable a category filter on the vendor profile. You can have it to only display vendors categories, but it can be very ressource consuming on profiles with hundreds of products." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">Yes, all categories</option>
+						<option value="2">Yes, current vendor's only categories</option>
+					</field>
+					
+					<!--<field name="enable_vendormap" type="radio" default="0" label="Enable Vendor Location" description="Interesting for physical goods. Vendor Location is based on Jomsocial or (Community Builder+Geommunity). VMVendor will check if user's coordinates are set in user profile and would show a map in a tab on the Vendor Profile page" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">Yes, if coordinates set</option>
+					</field>
+					<field name="map_width" type="text" default="700" label="Map Width" description="In px" />
+					<field name="map_height" type="text" default="300" label="Map Height" description="In px" />
+					-->
+					<field name="enable_rating" type="radio" default="1" label="Enable Star ratings" description="Enable star rating system. Vendor can not rate themeselves. Customers can rate vendor once and update their rating for a vendor anytime" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="rating_stars" type="text" default="5" label="How many Stars" description="Stars have halves too. Default is 5 stars allowing to rate from 0.5 to 5" />
+					<field name="purchasetorate" type="radio" default="1" label="Purchase required?" description="Has user to be a customer of this vendor to be able to rate? If not any user will be able to rate any vendor." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="enable_jusergroup" type="radio" default="1" label="Show J! Usergroup" description="Show Joomla usergroup on user profile. Usefull when you have various vendor plans." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="enable_jcomments" type="radio" default="0" label="jComments integration on profile" description="Add the jComment 3rd party component integration to vendor profile pages as an additional tab. Only enable this if you have the jComments component installed. Download it free from http://www.joomlatune.com." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="enable_fbcomments" type="radio" default="0" label="Facebook Comments on profile" description="This requires you previously set your Facebook Appid" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					
+					<field type="spacer" name="profile_visitis" label="profile_visitis" hr="true" />
+					<field name="log_profilevisits" type="radio" default="0" label="Log Profile Visits" description="Thsi will record profile visits and visitors and give access to a new page from own vendor profile (eye icon) A new menu type is also available if you want a menu shortcut." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="exclude_users" type="text" default="" label="Exclude Users" description="Exclude Users from being logged when visiting profiles. Comma separated list of users IDs" />
+					<field name="daystolog" type="text" default="30" label="Days to log" description="Days to log. Default: 30" />
+					
+					
+				</fieldset>
+				
+				<fieldset name="downloads" label="Downloads" description="This tab concerns Digital Goods. If you want VMVendor to manage and sell digital goods like ebooks, softwares, apps, music or videos etc... , you must use Ekerner Virtuemart Downloadable Products to be purchased separately from http://shop.ekerner.com.au/index.php/shop/joomla-extensions/vmcustom-downloadable-detail . If you change the following settings, new values will only apply to new product additions">
+						<field name="downloadable_order_states" type="list" multiple="true" default="C,S" label="Enable on" description="">
+						<option value="P">Pending</option>
+						<option value="C">Confirmed</option>
+						<option value="S">Shipped</option>
+						
+					</field>
+					
+					<field name="downloadable_expires_quantity" type="list" default="0" label="Expiry" description="">
+						<option value="0">∞</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+					</field>
+					<field name="downloadable_expires_period" type="list" default="days" label="Expiry Period" description="" >
+						<option value="days">Days</option>
+						<option value="months">Months</option>
+						<option value="years">Years</option>
+					</field>
+					<field type="spacer" name="freefiles_folderspacer" label="freefiles_folder" hr="true" />
+					<field name="freefiles_folder" type="list" default="media" label="Free files Folder" description="If you want to store free files securely , you can make VMVendor store these in the Virtuemart Safe Path folder instead of the Media folder." >
+						<option value="media">media folder</option>
+						<option value="safe">safe path</option>
+					</field>
+		
+		
+		
+		
+				</fieldset>
+				<fieldset name="customfields" label="Custom Fields" description="VMVendor will be integrating some 3rd party Virtuemart Custom Field plugins from Nordmograph.com">
+					<field name="enable_vm2tags" type="radio" default="0" label="Enable VM2tags component support" description="Product Tagging solution. Vendors will be able to add tags to a product. tags will be searchable and displayed in some tag clouds modules." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="tagslimit" type="text" default="5" label="Tags Limit" description="Limit the allowed quantity of tags per product. This limitation only applies to front end tags submission." />
+					<field name="enable_vm2geolocator" type="radio" default="0" label="Enable VM2geolocator plugin support" description="Product Geolocation plugin. Vendors will be able to plot a location on a map for their product location" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="vm2tags_asmetakeywords" type="radio" default="0" label="Tags as meta keywords" description="Also add VM2tags tags as Product metakeywords" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					
+					<field name="enable_embedvideo" type="radio" default="0" label="Enable EmbedVideo plugin support" description="Product Geolocation plugin. Vendors will be able to plot a location on a map for their product location" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					
+					<field name="enable_corecustomfields" type="radio" default="1" label="Allow Core Custom Fields (Beta)" description="Enable Virtuemat core custom fields for products addition and edition forms"  class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						 <option value="1">JYes</option>  
+					</field>
+					<field name="customfields_autoadd" type="text" default="" label="Auto Add Customfields" description="In case you need to have custom fields added autoamtically to your Virtuemart Products without the need to show on VMVendor form (ex. shipping calendar). Comma separated fields ID list" />
+					<!--<field name="enable_vm2dropdownfield" type="radio" default="0" label="Enable VM2dropdownfield plugin" description="This requires an addtional plugin (to be installed separately) allowing admin to set preset select lists to be added to the product form." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">Yes not mandatory</option>
+						<option value="2">Yes mandatory</option>
+					</field>-->
+				</fieldset>
+
+				<fieldset name="shipment" label="Shipment" description="">
+					
+					<field name="shipment_mode" type="list" default="0" label="Shipment management (beta)" description="As an admin you can enable shipment method in Virtuemart for vendors to pick from and make and set as their own shipment methods.">
+						<option value="0">Shared Shipment (recommended)</option>
+						<option value="1">Vendor administrated Shipment (beta)</option>
+					</field>
+				
+				</fieldset>
+
+				
+				
+				<fieldset name="advanced" label="Advanced" description="">
+					<field name="reset_onpricestatus" type="radio" default="1" label="Reset Reviews on Price changed" description="Reset Product Reviews and rating when item price is updated from Free to commercial." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="load_bootstrap_css" type="radio" default="0" label="Load Bootstrap CSS" description="In the rare cases your template would not load Bootstrap CSS, wich would result in various layout issues in VMVendor such as Vendor profile and Dashboard tabs broken, you can enable this to load the Bootstrap CSS" class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field type="spacer" name="acy_listidspacer" label="ACY Mailing" hr="true" />
+					<field name="acy_listid" type="text" default="" label="Vendor ACY Mailing list ID" description="You can use ACY Mailing list component to have Vendors added to a list when they upload their first product. Great way to make the communication between site administration and vendors easier. Create a list in the ACYmailing component for Vendors and specify the List ID here." />
+					<field type="spacer" name="Profiletypesspacer" label="Jomsocial Profile Types" hr="true" />
+					<field name="profiletypes_mode" type="radio" default="0" label="Profile types" description="Allows to restrict VMVendor features to one or more Jomsocial or EasySocial profile types. JSPT option only possible if you have the Jomsocial Profile type 3rd party component installed and correctly set up." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">Core profile types</option>
+						<option value="2">JSPT profile types</option>
+					</field>
+					<field name="profiletypes_ids" type="text" default="" label="Profile Types IDs" description="If you enabled the previous parameter, set here the profiletypes IDs for users to be allowed to use VMVendor. Separate multiple profiletypes IDs with coma." />
+					
+				<!--	<field type="spacer" name="jqueryspacer" label="jQuery" hr="true" />
+					
+					<field name="load_jquery" type="radio" default="0" label="Load jQuery" description="Load jQuery on product addition and edition forms (Required if Jquery is not loaded within another extension and if your form allows multiple product pictures or files). Should be loaded only once on your page." class="radio btn-group btn-group-yesno">
+						<option value="0">JNo</option>
+						<option value="1">JYes</option>
+					</field>
+					<field name="jquery_url" type="text" size="100" default="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" label="jQuery URL" description="Leave empty if jQuery is allready loaded on the product addition and edition forms by the template for eg. Default is:  https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" />
+					-->
+				</fieldset>				
+				<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_vmvendor"
+			section="component" />
+	</fieldset>
+</config>
+<!--
+########################################################################################
+The following are a list of all the different types of fields you can add to this file
+They are here for copy pasting - neat eh?
+########################################################################################
+
+http://docs.joomla.org/Calendar_parameter_type
+<field name="mycalendar" type="calendar" default="5-10-2010" label="Select a date" description="" format="%d-%m-%Y" />
+
+http://docs.joomla.org/Category_parameter_type
+<field name="mycategory" type="category" label="Select a category" description="" section="3" />
+
+http://docs.joomla.org/Editors_parameter_type
+<field name="myeditor" type="editors" default="none" label="Select an editor" />
+
+http://docs.joomla.org/Filelist_parameter_type
+<field name="myfile" type="filelist" default="" label="Select a file" description="" directory="administrator" filter="" exclude="" stripext="" />
+
+http://docs.joomla.org/Folderlist_parameter_type
+<field name="myfolder" type="folderlist" default="" label="Select a folder" directory="administrator" filter="" exclude="" stripext="" />
+
+http://docs.joomla.org/Helpsites_parameter_type
+<field name="myhelpsite" type="helpsites" default="" label="Select a help site" description="" />
+
+http://docs.joomla.org/Hidden_parameter_type
+<field name="mysecretvariable" type="hidden" default="" />
+
+http://docs.joomla.org/Imagelist_parameter_type
+<field name="myimage" type="imagelist" default="" label="Select an image" description="" directory="" exclude="" stripext="" />
+
+http://docs.joomla.org/Languages_parameter_type
+<field name="mylanguage" type="languages" client="site" default="en-GB" label="Select a language" description="" />
+
+http://docs.joomla.org/List_parameter_type
+<field name="mylistvalue" type="list" default="" label="Select an option" description="">
+  <option value="0">Option 1</option>
+  <option value="1">Option 2</option>
+</field>
+
+http://docs.joomla.org/Menu_parameter_type
+<field name="mymenu" type="menu" default="mainmenu" label="Select a menu" description="Select a menu" />
+
+http://docs.joomla.org/Menuitem_parameter_type
+<field name="mymenuitem" type="menuitem" default="45" label="Select a menu item" description="Select a menu item" />
+
+http://docs.joomla.org/Password_parameter_type
+<field name="mypassword" type="password" default="secret" label="Enter a password" description="" size="5" />
+
+http://docs.joomla.org/Radio_parameter_type
+<field name="myradiovalue" type="radio" default="0" label="Select an option" description="">
+  <option value="0">1</option>
+  <option value="1">2</option>
+</field>
+
+http://docs.joomla.org/Spacer_parameter_type
+<field type="spacer" default="&lt;b&gt;Advanced parameters&lt;/b&gt;" />
+
+http://docs.joomla.org/Sql_parameter_type
+<field name="myfield" type="sql" default="10" label="Select an article" query="SELECT id, title FROM #__content" key_field=”id” value_field=”title” />
+
+http://docs.joomla.org/Text_parameter_type
+<field name="mytextvalue" type="text" default="Some text" label="Enter some text" description="" size="10" />
+
+http://docs.joomla.org/Textarea_parameter_type
+<field name="mytextarea" type="textarea" default="default" label="Enter some text" description="" rows="10" cols="5" />
+
+http://docs.joomla.org/Timezones_parameter_type
+<field name="mytimezone" type="timezones" default="-10" label="Select a timezone" description="" />
+
+http://docs.joomla.org/Usergroup_parameter_type
+<field name="myusergroups" type="usergroup" default="" label="Select a user group" description="" />
+
+
+ -->

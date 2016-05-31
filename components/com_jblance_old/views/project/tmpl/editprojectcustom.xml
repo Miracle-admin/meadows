@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Project - Post New Project(Automated user registration)">
+		<message>
+			create new project along with user registration.
+		</message>
+	</layout>
+	<state>
+		<name>Post New Project(Automated user registration)</name>
+		<description>Create new project(Automated user registration).</description>
+	</state>
+</metadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="My inbox">
+  <message><![CDATA[User Menu. Link to the users inbox. Messages to/from the vendor.<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jclassifieds">
+   <field name="controller" type="text" default="vendor-inbox" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

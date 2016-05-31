@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="system" client="site">
+	<name>J-BusinessDirectory Url Translator</name>
+	<author>CMS Junkie</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>(C) CMSJunkie. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@cmsjunkie.com</authorEmail>
+	<authorUrl>www.cmsjunkie.com</authorUrl>
+	<version>2.0.0</version>
+	<description>This plugin is used for url translation.</description>
+	<files>
+		<filename plugin="urltranslator">urltranslator.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

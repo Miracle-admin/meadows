@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Vendor Registration">
+  <message><![CDATA[Link to the vendor registration form<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="vendors" label="controller" description=""/>
+   <field name="task" type="text" default="register" label="task" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Vendor Sales">
+  <message><![CDATA[List of vendors' sales<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="vendors-sales" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

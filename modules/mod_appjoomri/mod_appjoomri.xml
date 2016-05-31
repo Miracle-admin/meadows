@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>APP Joombri Buy Source </name>
+	<author>Joomla! Project</author>
+	<creationDate>April 2015</creationDate>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>3.0.0</version>
+	<description>MOD_APP_MARKET_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_appjoomri">mod_appjoomri.php</filename>
+		<filename>mod_appjoomri.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset
+				name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

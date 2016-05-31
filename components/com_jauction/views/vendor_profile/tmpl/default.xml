@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Vendor Profile">
+  <message><![CDATA[Edit vendor Profile<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jauction">
+   <field name="controller" type="text" default="vendors" label="controller" description=""/>
+   <field name="task" type="text" default="home" label="task" description=""/>
+   <field name="eid" type="text" default="" label="eid" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

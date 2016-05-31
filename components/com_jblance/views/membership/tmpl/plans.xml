@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Subscription plans(developer)" hidden="false">
+		<message>
+			<![CDATA[Subscription plans listing page.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Subscription plans(developer)</name>
+		<description>All plans and there corresponding benefits.</description>
+	</state>
+</metadata>

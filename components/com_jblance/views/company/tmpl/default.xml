@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="JoomBri Freelance Companies">
+		<message>
+			<![CDATA[Shows the Joombri Freelance Companies.]]>
+		</message>
+	</layout>
+	<state>
+		<name>JoomBri Freelance Companies</name>
+		<description>Shows the Joombri Freelance Companies.</description>
+	</state>
+</metadata>
+

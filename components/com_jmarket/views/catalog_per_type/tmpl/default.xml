@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Catalog per Type">
+  <message><![CDATA[Specify a type. It could be either the item type ID or it can be the designation ( eg: item, product, auction, etc... )<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="catalog" label="controller" description=""/>
+   <field name="task" type="text" default="home" label="task" description=""/>
+   <field name="type" type="text" default="enter type id" label="type" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

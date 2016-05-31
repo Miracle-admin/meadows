@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="joombri">
+    <name>Profile extra fields</name>
+    <author>Bipin Thakur</author>
+    <creationDate>January 06, 2016</creationDate>
+    <copyright>(C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>bipin.singh@emptask.com</authorEmail>
+    <authorUrl>www.joomla.org</authorUrl>
+    <version>1.0</version>
+    <description>This plugin saves the extra fields added to developer profile.</description>
+    <files>
+        <filename plugin="extraprofilefields">extraprofilefields.php</filename>
+    </files>
+    <config/>
+</extension>

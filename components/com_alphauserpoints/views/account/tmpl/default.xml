@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AUP_USERPOINTSACCOUNTLAYOUT">
+		<message>
+			<![CDATA[COM_AUP_USERPOINTSACCOUNTLAYOUT]]>
+		</message>
+	</layout>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+<fields name="params">
+	
+		<!-- Basic options. -->
+	<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+		
+		<field name="show_links_to_users" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_LINKS" description="AUP_SHOW_LINKS_DESC">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>
+			
+    	<field name="showAvatar" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_AVATAR" description="AUP_SHOW_AVATAR">
+    		<option value="0">AUP_NO</option>
+    		<option value="1">AUP_YES</option>
+    	</field>
+    	<field name="heightAvatar" type="text" size="10" default="120" label="AUP_HEIGHTIMAGE" description="AUP_HEIGHTIMAGE"/> 	
+    	
+    	<field name="showQRCode" type="radio" class="radio btn-group" default="1" label="AUP_QRCODE" description="AUP_QRCODE">
+    		<option value="0">AUP_NO</option>
+    		<option value="1">AUP_YES</option>
+    	</field>    	
+    	
+    	<field name="showSystemProfileComplete" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_SYSTEM_PROFILE_COMPLETE" description="AUP_SHOW_SYSTEM_PROFILE_COMPLETE">
+    		<option value="0">AUP_HIDE</option>
+    		<option value="1">AUP_SHOW</option>
+    	</field>
+		
+    	<field name="showBirthday" type="radio" class="radio btn-group" default="0" label="AUP_BIRTHDATE" description="AUP_BIRTHDATE">
+    		<option value="0">AUP_AGE</option>
+    		<option value="1">AUP_BIRTHDAY</option>
+    	</field>
+		
+    	<field name="formatBirthday" type="list" default="%Y-%m-%d" label="AUP_DATE" description="AUP_DATE">
+    		<option value="%Y-%m-%d">yyyy-mm-dd</option>
+    		<!--<option value="%d/%m/%Y">dd/mm/yyyy</option>-->
+    		<option value="%d-%m-%Y">dd-mm-yyyy</option>
+    	</field>
+		
+    	<field name="showContactInformation" type="radio" class="radio btn-group" default="1" label="AUP_CONTACT_INFORMATION" description="AUP_CONTACT_INFORMATION">
+    		<option value="0">AUP_HIDE</option>
+    		<option value="1">AUP_SHOW</option>
+    	</field>
+		
+    	<field name="showEducationInformation" type="radio" class="radio btn-group" default="1" label="AUP_EDUCATION_INFORMATION" description="AUP_EDUCATION_INFORMATION">
+    		<option value="0">AUP_HIDE</option>
+    		<option value="1">AUP_SHOW</option>
+    	</field>
+		
+    	<field name="showSocialInformation" type="radio" class="radio btn-group" default="1" label="AUP_SOCIAL_NETWORKING_INFORMATION" description="AUP_SOCIAL_NETWORKING_INFORMATION">
+    		<option value="0">AUP_HIDE</option>
+    		<option value="1">AUP_SHOW</option>
+    	</field>
+		
+		<field name="num_item_activities" type="list" default="10" label="AUP_NUM_ITEM_ACTIVITY" description="AUP_NUM_ITEM_ACTIVITY_DESC">
+        <option value="0">AUP_NONE</option>			  
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+				<option value="50">50</option>
+				<option value="all">AUP_ALL</option>				
+		</field>
+			
+		<field name="show_tab_medals" type="radio" class="radio btn-group" default="1" label="AUP_MEDALS" description="AUP_MEDALS">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>	
+	
+		<field name="show_tab_referrees" type="radio" class="radio btn-group" default="1" label="AUP_REFERREES" description="AUP_REFERREES">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>	
+	
+		<field name="show_tab_statistics" type="radio" class="radio btn-group" default="1" label="AUP_STATISTICS" description="AUP_STATISTICS">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>
+		<field name="show_tab_profile" type="radio" class="radio btn-group" default="1" label="AUP_EDIT_PROFILE" description="AUP_EDIT_PROFILE">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field> 	
+		<field name="show_name_cols" type="radio" class="radio btn-group" default="0" label="AUP_SHOWNAMECOLS" description="AUP_SHOWNAMECOLSDESC">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>
+		<field name="show_username_cols" type="radio" class="radio btn-group" default="1" label="AUP_USERNAME" description="AUP_USERNAME">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>
+		<field name="show_community_points" type="radio" class="radio btn-group" default="1" label="AUP_TOTAL_COMMUNITY_POINTS" description="AUP_TOTAL_COMMUNITY_POINTS">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>			
+		<field name="show_average_age_commnunity" type="radio" class="radio btn-group" default="1" label="AUP_AVERAGE_AGE" description="AUP_AVERAGE_AGE_COMMUNITY_MEMBERS">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>			
+		<field name="show_percentage" type="radio" class="radio btn-group" default="1" label="AUP_PERCENTAGE" description="AUP_PERCENTAGE">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>
+		<field name="show_top10" type="radio" class="radio btn-group" default="1" label="AUP_TOP_10" description="AUP_TOP_10">
+			<option value="0">AUP_HIDE</option>
+			<option value="1">AUP_SHOW</option>
+		</field>
+	</fieldset>
+</fields>
+
+</metadata>

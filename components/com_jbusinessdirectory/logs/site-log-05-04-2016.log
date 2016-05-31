@@ -1,0 +1,4 @@
+2016-04-05 6:42:08 - DEBUG --> E-mail with subject New Business Listing sent from office@site.com to office@site.com a:0:{} result:Could not instantiate mail function. 
+2016-04-05 6:42:09 - DEBUG --> E-mail with subject Your business was added on our directory sent from office@site.com to infos@infor.us a:0:{} result:Could not instantiate mail function. 
+2016-04-05 6:48:38 - DEBUG --> Order has been successfully updated. Order ID: 12 
+2016-04-05 6:48:39 - DEBUG --> E-mail with subject Payment Receipt from JBusinessDirectory sent from office@site.com to infos@infor.us a:1:{i:0;s:15:"office@site.com";} result:Could not instantiate mail function. 

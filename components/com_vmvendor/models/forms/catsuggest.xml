@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="mainfields">
+		<field 
+            name="cat_name" 
+            type="text" 
+            label="COM_VMVENDOR_CATSUGGEST_CATNAME" 
+            description="" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  />
+		<field 
+            name="cat_descr" 
+            type="textarea" 
+            label="COM_VMVENDOR_CATSUGGEST_CATDESCR" 
+            description="" 
+			filter="safehtml" 
+			class="inputbox"  />     
+		<field 
+            name="suggestcatselectlist" 
+            type="suggestcatselectlist" 
+            label="COM_VMVENDOR_CATSUGGEST_CATPARENT" 
+            description="" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  />  
+
+    </fieldset>
+</form>

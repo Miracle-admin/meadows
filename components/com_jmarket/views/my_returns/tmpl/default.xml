@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="My Returns">
+  <message><![CDATA[This will link the users to the list of their returns<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="order-myrefunds" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

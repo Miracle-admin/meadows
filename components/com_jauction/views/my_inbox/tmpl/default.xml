@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="My inbox">
+  <message></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jauction">
+   <field name="controller" type="text" default="vendor-inbox" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

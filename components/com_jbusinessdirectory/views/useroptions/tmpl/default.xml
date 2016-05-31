@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 46 2010-11-21 17:27:33Z chdemko $ -->
+<metadata>
+	<layout title="COM_J_BUSINESSDIRECTORY_USER_OPTIONS">
+		<message>COM_J_BUSINESSDIRECTORY_USER_OPTIONS_INFO</message>
+	</layout>
+</metadata>

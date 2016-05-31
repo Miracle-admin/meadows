@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="List of all Categories">
+  <message><![CDATA[List all the categories of the store. Specify a eid and you can view all the sub-categories of a category.<br>eid is the category ID.]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jclassifieds">
+   <field name="controller" type="text" default="catalog" label="controller" description=""/>
+   <field name="task" type="text" default="category" label="task" description=""/>
+   <field name="eid" type="text" default="1" label="eid" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

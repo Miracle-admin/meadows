@@ -1,0 +1,128 @@
+.latest-offers{
+	display: block;
+	padding: 20px 0;
+	text-align:center;
+}
+
+.latest-offers ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display:inline-block;	
+}
+
+.latest-offers ul li{
+	margin-bottom: 15px;
+	float: left;
+}
+
+.latest-offers .offer-image{
+	display: block;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+
+.latest-offers .offer-image a{
+	line-height: 200px;
+	overflow: hidden;
+}
+
+.latest-offers .offer-image img{
+	width: auto;
+	height: 200px;
+	display: inline-block;
+	max-width: auto;
+}
+
+.latest-offers .offer-title{
+	min-height: 30px;
+	vertical-align: middle;
+	padding-top: 10px;
+}
+
+.latest-offers .offer-container {
+    background: none repeat scroll 0 0 #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    margin-top: 5px;
+	float: left;
+    font-size: 95%;
+    line-height: 140%;
+    margin-right: 15px;
+	padding: 10px;
+	text-align: center;
+	width: auto;
+	max-width: 275px;
+	
+}
+
+.latest-offers .offer-container a{
+	font-weight: 600;
+	color: #333;
+}
+
+.latest-offers .offer-overlay{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: opacity 400ms ease 0s;
+    z-index: 2;
+}
+
+.latest-offers .offer-image:hover .offer-overlay {
+    opacity: 1;
+}
+
+.latest-offers .offer-overlay .offer-vertical-middle {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+.latest-offers .offer-overlay .offer-vertical-middle > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.latest-offers .offer-overlay a {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 3px;
+    opacity: 0;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: scale3d(0, 0, 0);
+    transition: all 400ms ease 0s;
+    vertical-align: middle;
+}
+.latest-offers:hover .offer-overlay a:hover {
+    background: none repeat scroll 0 0 #333;
+    border-color: #333;
+}
+
+.latest-offers .offer-overlay:hover a{
+	opacity:1;
+	transform: scale3d(1, 1, 1);
+}
+
+
+
+

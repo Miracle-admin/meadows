@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Display One Product">
+  <message>Display one product. Specify the eid, the ID of the product.</message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jclassifieds">
+   <field name="controller" type="text" default="catalog" label="controller" description=""/>
+   <field name="task" type="text" default="show" label="task" description=""/>
+   <field name="eid" type="text" default="specify item id here" label="eid" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

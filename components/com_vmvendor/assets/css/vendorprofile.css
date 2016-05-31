@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* CSS Document */
+.vmvthumb {
+    /* width: 20%; */
+    float: left;
+    margin: 15px 5px 10px 5px;
+    background: #fff;
+    /* -moz-box-shadow: 0px 1px 6px #666;
+    -webkit-box-shadow: 0px 1px 6px #666;
+    box-shadow: 0px 1px 6px #666;*/
+    overflow: hidden;
+    max-width: 240px;
+    border: 1px solid #bbb;
+}
+
+.prodpic {
+    width: 100%;
+    text-align: center;
+}
+
+.prodprice {
+    vertical-align: bottom;
+}
+
+.prodpic img {
+    background-color: #f7f7f7;
+    max-width: 100%;
+}
+
+.prodtitle {
+    font-weight: bold;
+    padding: 12px 5px 10px 5px;
+    text-align: center;
+}
+
+.product-edit {
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+
+.vmvendor-toolbar {
+    float: right;
+    text-align: right;
+    text-decoration: none
+}
+
+.vmvendor-toolbar a {
+    text-decoration: none
+}
+
+.vmvendor-toolbar img {
+    vertical-align: middle
+}
+
+#storename {
+    float: left;
+    padding: 15px 0 0 15px;
+}
+
+#vendor-img-rating {
+    float: left;
+}
+
+#vendor-img {
+    margin: 15px 5px 10px 5px;
+    padding: 15px 15px 15px 15px;
+    background: #fff;
+    -moz-box-shadow: 0px 1px 6px #666;
+    -webkit-box-shadow: 0px 1px 6px #666;
+    box-shadow: 0px 1px 6px #666;
+}
+
+#icon-buttons {
+    padding: 5px 0 0 0;
+}
+
+.message_good {
+    font-color: green;
+    font-weight: bold;
+}
+
+#add-product {
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+}
+
+#social_share {
+    padding-top: 30px;
+    float: right;
+    right: 0
+}
+
+#social_share div {
+    margin-right: 5px;
+}
+
+div.current {
+    clear: both;
+    border: 1px solid #CCC;
+    padding: 10px 10px;
+    background: url(../img/nav_level_1.gif) repeat-x;
+}
+
+#product_in_stock {
+    text-align: right;
+    background-color: #e6e6e6;
+    float: right;
+    min-width: 30px;
+    max-width: 100px;
+    padding: 2px 2px 0 2px;
+}
+
+#rating_result {
+    clear: both;
+    font-size: 10px;
+}
+
+#vmv_usergroup {
+    text-align: center;
+}
+
+.vmv-form-group {
+    width: 49%;
+    float: left;
+}
+
+#modal-askvendor {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 10500;
+    width: 600px;
+}
+
+.img-circle {
+    padding: 1px;
+    border: 1px solid #dedede
+}
+
+#vendor_stars {
+    margin: auto;
+    width: 130px
+}
+
+#rating_result {
+    text-align: center
+}
+
+.addtocart-area {
+    padding: 20px 8px 0;
+    margin: 0 0 3em !important
+}
+
+.addtocart-bar {
+    position: inherit !important
+}
+
+.product {
+    padding: 0 0 10px 20px
+}
+
+.pagenav {
+    margin: 0 !important
+}

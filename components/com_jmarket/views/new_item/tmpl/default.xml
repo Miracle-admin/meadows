@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="New Item">
+  <message><![CDATA[Link to create a new item.<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="item" label="controller" description=""/>
+   <field name="task" type="text" default="add" label="task" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

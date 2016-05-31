@@ -1,0 +1,214 @@
+#companies-search textarea:focus, #companies-search input:focus, #companies-search select:focus, #companies-search password:focus  {
+   border-color: rgba(82, 168, 236, 0.9) !important;
+   box-shadow: 0 1px 1px rgba(0, 2, 2, 0.095) inset, 0 0 3px rgba(82, 168, 236, 0.7) inset;
+   outline: 0 none;
+}
+
+.ui-autocomplete-loading {
+	background: white url('../images/loading_small.gif') right center no-repeat;
+}
+
+#searchform form{
+	margin: 0;
+}
+
+#searchform .form-container {
+    float: left;
+}
+
+#searchform .form-field {
+    float: left;
+	margin: 5px 10px 0 0;
+	position: relative;
+}
+
+#searchform .form-field select, #searchform .form-field input[type="text"]{
+	border-color: #9B9B9B #EDEDED #DDDDDD #C2C2C2;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	color: #333333;
+	display: inline;
+	font-size: 14px;
+	font-weight: normal;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 0 5px 0;
+	padding: 0px 13px;
+	width: 200px;
+}
+
+#searchform .chosen-container-single .chosen-search input[type="text"]{
+	width: 100%;
+}
+
+.chosen-container-single .chosen-single div:before {
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+	content:"\f107";
+	font-size: 19px;
+    display: block;
+    line-height: 45px;
+    text-align: center;
+   
+}
+
+.chosen-container-single .chosen-single div{
+	 width: 23px;
+}
+
+#searchform .form-field .detail_box{
+	float: left;
+	margin: 5px 10px 0 0;
+    position: relative;
+    width: 222px;
+}
+
+#searchform .form-field .input-append{
+	margin: 0;
+}
+
+#searchform .form-field .detail_box div{
+	float:left;
+	margin: 5px 10px 0 0;
+}
+
+#searchform .form-field input{
+}
+
+#searchform .form-field select {
+    height: 41px;
+}
+
+#searchform.vertical input.search-field{
+	width: 98%;
+	padding: 2px 0;
+} 
+
+#searchform.vertical .form-field{
+	float: none;
+	clear: both;
+	margin: 7px 0 !important;
+	padding: 0 !important;
+}
+
+#searchform.vertical .form-field select{
+	width: 100%;
+	font-size: 12px;
+	display:block;
+}
+
+#searchform.vertical .form-container{
+	float: none;
+}
+
+#searchform.vertical input.search-button{
+	float: right;
+	width: 81px;
+
+}
+
+#searchform.vertical  label{
+	font-size: 12px;
+	top: 0px;
+}
+
+#searchform .search-dir-button{
+	float: left;
+	margin-top: 5px! important;
+	font-weight: bold;
+	padding: 0px 10px;
+	color: #FFFFFF;
+	font-size: 13px;
+	line-height: 41px;
+	height: 41px;
+}
+
+#current-search {
+    color: #FFFFFF;
+    font-size: 1.1em;
+    float: left;
+    line-height: 40px;
+    padding:  0 10px;
+}
+
+#categories-link {
+    font-size: 1.3em;
+	color: #FFFFFF;
+	float: left;
+	line-height: 32px;
+	padding: 4px;
+	margin-left: 100px;
+}
+
+.custom-combobox {
+	position: relative;
+	display: inline-block;
+}
+
+.custom-combobox-toggle {
+	/* position: absolute;  */
+	top: 0;
+	bottom: 0;
+	/* margin-left: -1px; */
+	padding: 0;
+	/* support: IE7 */
+	*height: 1.7em;
+	*top: 0.1em;
+}
+
+.custom-combobox-input {
+	margin: 0;
+	padding: 0.3em;
+}
+
+/*-- autocomplete ---*/
+
+.ui-autocomplete {
+	max-height: 200px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+	height: 200px;
+}
+
+.ui-autocomplete.ui-front.ui-menu{
+	z-index: 11000!important;
+}
+
+#searchform .ui-button{
+	height: 29px;
+	margin-left:1px;
+}
+
+#searchform .form-field input.dir-date {
+  	 width: 150px;
+}
+ 
+#startDate_img,#endDate_img{
+	background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+    border-image: none;
+ 	height: 40px;
+ 	position: absolute;
+ 	right: 0px;
+ 	margin-top: 1px;
+ 	z-index: 1;
+ 	border-radius: 0 4px 4px 0;
+ 	margin-left: -1px;
+ 	display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 14px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+ 

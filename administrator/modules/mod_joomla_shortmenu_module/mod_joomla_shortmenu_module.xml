@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="1" version="1.6" method="upgrade">
+ <name>Joobi - Joobi Short Menu</name>
+ <creationDate>April 2015</creationDate>
+ <version>1.0</version>
+ <description><![CDATA[
+<table style="text-align: left; width: 500px; margin-left: auto; margin-right: auto; background-color: rgb(12, 142, 194); color: white;" border="0" cellpadding="10" cellspacing="10">
+<tbody>
+<tr align="center">
+<td colspan="2" rowspan="1" style="vertical-align: top;"><big><big><span style="font-weight: bold;">Joobi Apps</span></big></big><br></td>
+</tr>
+<tr>
+<td style="text-align: center;"><big><span style="font-weight: bold;">Documentation</span></big><br>
+<br>
+<small>Find and share ideas with other Joobi users around the world.</small><br>
+<br><a style="color: white;"
+href="https://www.joobi.co/r.php?l=documentation" target="_blank">Read
+Tutorials</a><br>
+</td>
+<td style="text-align: center;"><big style="font-weight: bold;">Ticket System</big><br>
+<small>Do you have a complex problem or question? Our friendly and knowledgeable technical staff is always ready to help!</small><br>
+<br>
+<a style="color: white;" href="https://www.joobi.co/r.php?l=support" target="_blank">Submit a Ticket</a><br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;"><big style="font-weight: bold;">Community Forum</big><br>
+<br>
+<small>Other Places You'd Find Answers</small><br>
+<br>
+<a style="color: white;" href="https://www.joobi.co/r.php?l=forum" target="_blank">Ask a Question</a><br>
+</td>
+<td style="text-align: center;"><big><span style="font-weight: bold;">Live Chat</span></big><br>
+<small>Do you have a presale and product related questions? Our caring and dedicated support agent is ready with answers!</small><br>
+<br>
+<a style="color: white;" href="https://www.joobi.co/r.php?l=support" target="_blank">Talk to Us</a><br>
+</td>
+</tr>
+</tbody>
+</table>
+]]></description>
+ <author>Joobi</author>
+ <authorname>Joobi</authorname>
+ <copyright>(C) 2006-2015 Joobi Limited. All rights reserved.</copyright>
+ <authorEmail>wecare@joobi.co</authorEmail>
+ <authorUrl>http://www.joobi.co</authorUrl>
+ <license>GNU GLP v3</license>
+ <files>
+  <filename module="mod_joomla_shortmenu_module">mod_joomla_shortmenu_module.php</filename>
+ </files>
+ <uninstallfile>mod_joomla_shortmenu_module_uninstall.php</uninstallfile>
+ <config>
+  <fields name="params" addfieldpath="/components/com_jcenter/fields">
+   <fieldset name="basic">
+    <field name="preferences" label="Preferences" description="Click on the link to edit the preferences of the extension" type="preferences" id="preferences"/>
+    <field name="moduleclass_sfx" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" type="text"/>
+   </fieldset>
+  </fields>
+ </config>
+</extension>

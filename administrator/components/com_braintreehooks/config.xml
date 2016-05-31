@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="braintreehooks" label="JACTION_COMPONENT_SETTINGS" description="Email log recipients , leave the fields empty if you dont want to receive the logging through emails.">
+	
+	<field name="el_r1" type="text" size="10" default="" label="Logger recipient 1" description="Logger recipient email id 1"/> 
+		<field name="el_r2" type="text" size="10" default="" label="Logger recipient 2" description="Logger recipient email id 2"/> 
+		<field name="el_r3" type="text" size="10" default="" label="Logger recipient 3" description="Logger recipient email id 3"/> 
+		<field name="el_r4" type="text" size="10" default="" label="Logger recipient 4" description="Logger recipient email id 4"/> 
+		<field name="el_r5" type="text" size="10" default="" label="Logger recipient 5" description="Logger recipient email id 5"/> 
+	
+	
+	
+	</fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			validate="rules"
+			component="com_braintreehooks"
+			section="component"
+		/>
+	</fieldset>
+</config>

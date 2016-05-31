@@ -1,0 +1,36 @@
+<extension type="module" version="3.3" method="upgrade" client="site" >
+    <name>VendorPoints2Paypal</name>
+    <version>1.3</version>
+    <description>It allows your members to change their AlphaUserPoints to Paypal Cash! Once they reach the minimum points amount required, they can use this module to send a payment request to site Admin. Admin can then check if the point deduction is effective yet in one click and confirm Paypal payment with another click. It supports every currency Paypal does. Make sure you set the module as you like and test before going live. The provided plgaup_vendorpoints2paypal.xml file rule is required. This module is base on the userpoints2paypal module. It has been modified to be used with VMvendor and to automatically get currency data from main vendor / currency ratio from VMVendor component configuration.</description>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <author>Nordmograph</author>
+    <authoremail>contact@nordmograph.com</authoremail>
+    <authorurl>http://www.nordmograph.com/extensions</authorurl>
+    <copyright>Copyright (C) 2010 - 2015 Nordmograph. All rights reserved.</copyright>
+    <creationDate>10-Dec-12</creationDate>
+    <languages>
+        <language tag="en-GB">en-GB.mod_vendorpoints2paypal.ini</language>
+		<language tag="fr-FR">fr-FR.mod_vendorpoints2paypal.ini</language>
+    </languages>
+	<files>
+	<filename>mod_vendorpoints2paypal.xml</filename>
+	<filename module="mod_vendorpoints2paypal">mod_vendorpoints2paypal.php</filename>
+	<folder>img</folder>
+	<filename>tmpl/default.php</filename>
+	<filename>helper.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="pointsname" type="text" default="points" label="Points name" description="The way you call your points. Default: Points..." />
+				<field name="minreq" type="text" default="1000000" label="Minimum Points Required" description="Minimum points amount before a user can send a Paypal payment request." />
+				<field name="sendto" type="list" default="0" label="Send Request to" description="Email address to send the request to" class="radio btn-group ">
+						<option value="0">Site Admin</option>
+						<option value="1">Custom Email address</option>
+				</field>
+				<field name="customemail" type="text" default="" label="Custom Email address" description="Custom Email address to send the Paypal payment request to." />
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

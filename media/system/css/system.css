@@ -1,0 +1,36 @@
+
+/**
+ * @copyright	Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+/* System Messages */
+#system-message { padding: 0;/* max-width: 1170px; */ margin: 0 auto;/* margin-bottom: 20px; */ text-align: center !important; }
+
+#system-message > dt { font-weight: bold; display: none; }
+
+#system-message > dd { margin: 0; font-weight: bold; text-indent: 30px; }
+
+#system-message > dd > ul { color: #FFF; background-position: 4px top; background-repeat: no-repeat; margin-bottom: 0; list-style: none; padding: 20px;/* border-top: 1px solid #84A7DB; *//* border: 1px solid #84A7DB; */ font-weight: normal; text-align: center; font-size: 14px;/* border-radius: 4px; */ }
+
+#system-message > dd > ul > li { line-height: 1.5em; }
+
+/* System Standard Messages */
+#system-message > .message > ul { background-color: #74AEF9;/* background-image: url(../images/notice-info.png); */ }
+
+/* System Error Messages */
+#system-message > .error > ul,
+#system-message > .warning > ul,
+#system-message > .notice > ul { color: #FFFFFF; }
+
+#system-message > .error > ul, .alert-error { background-color: #E6C0C0; /* background-image: url(../images/notice-alert.png); */ border-color: #E6C0C0; }
+
+/* System Warning Messages */
+#system-message > .warning > ul { background-color: rgba(220, 23, 23, 0.86);/* background-image: url(../images/notice-note.png); */ border-color: #E34B4B; }
+
+/* System Notice Messages */
+#system-message > .notice > ul { background-color: #EFE7B8; /* background-image: url(../images/notice-note.png); */ border-color: #EFE7B8; }
+
+#system-message p { text-align: center; }
+
+#system-message a.close { position: absolute; top: 26px; right: 20px; }

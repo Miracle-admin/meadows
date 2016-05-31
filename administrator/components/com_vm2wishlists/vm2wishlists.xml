@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_vm2wishlists</name>
+    <creationDate>2015-03-16</creationDate>
+    <copyright>Copyright (C) 2015. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or higher ; See LICENSE.txt</license>
+    <author>Nordmograph</author>
+    <authorEmail>contact@nordmograph.com</authorEmail>
+    <authorUrl>http://www.nordmograph.com/extensions</authorUrl>
+    <version>2.0.2</version>
+    <description>Sharable Wishlists and Fav lists component for Virtuemart 3+ products. VM2Wishlists is an advanced wishlists component for VM3 with great features such as Multiple lists, List stored in cookie for guests and inported when registering. Privacy settings, share by social networks or Email. List RSS feed , Amazon Partner program integration. Category filter. Masonry layout, Ajax buttons, Top listed module,  etc...</description>
+    
+    
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>vm2wishlists.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+    <languages folder="languages/site">
+        
+			<language tag="en-GB">en-GB/en-GB.com_vm2wishlists.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_vm2wishlists.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_vm2wishlists/assets/images/s_com_vm2wishlists.png" >COM_VM2WISHLISTS</menu>
+        <submenu>
+            
+			<menu link="option=com_vm2wishlists&amp;view=lists" view="lists" img="components/com_vm2wishlists/assets/images/s_lists.png" alt="Vm2wishlists/Lists">COM_VM2WISHLISTS_TITLE_LISTS</menu>
+			<menu link="option=com_config&amp;view=component&amp;component=com_vm2wishlists" view="component" img="class:vm2wishlists-settings">COM_VM2WISHLISTS_TITLE_OPTIONS</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>vm2wishlists.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+            
+			<language tag="en-GB">en-GB/en-GB.com_vm2wishlists.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_vm2wishlists.sys.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_vm2wishlists.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_vm2wishlists.sys.ini</language>
+        </languages>
+    </administration>
+    <updateservers>
+        <!-- Note: No spaces or linebreaks allowed between the server tags -->
+        <server type="extension" priority="1" name="VM2Wishlists compononent Update Site">http://www.nordmograph.com/extensions/updateserver/com_vm2wishlists-update.xml</server>
+    </updateservers>
+    
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.component-creator.com/ -->

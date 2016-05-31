@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <view title="Display one Category">
+  <message><![CDATA[Display one category of the store. Specify a eid to define which category to view.<br>eid is the category ID.]]></message>
+ </view>
+</metadata>

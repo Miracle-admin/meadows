@@ -1,0 +1,96 @@
+/**
+ * @version 2.2
+ * @package Joomla 3.x
+ * @subpackage RS-Monials
+ * @copyright (C) 2013-2022 RS Web Solutions (http://www.rswebsols.com)
+ * @license GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ */
+ 
+/* Success Message Text after submitting a testimonial */
+.RSWS_success { color:#009900; font-weight:bold; }
+
+/* Description text that display after page title */
+.RSWS_desc { }
+
+/* Css class for "Submit a Testimonial" Link */
+.RSWS_submit_link { text-align:right; }
+.RSWS_submit_link a { }
+.RSWS_submit_link a:hover { }
+
+/* Testimonial Display Block + Submission Form Block */
+.RSWS_testi_block { display:block; margin: 20px 0; border:1px solid #dedede; padding:10px; background: #ffffff; }
+
+/* Testimonial Submission form block only */
+.RSWS_testi_block_form { }
+
+/* Testimonial Display Block (Odd ones, i.e. 1, 3, 5, 7 and so on.) */
+.RSWS_testi_block_1 { }
+
+/* Testimonial Display Block (Even ones, i.e. 2, 4, 6, 8 and so on.) */
+.RSWS_testi_block_0 { }
+
+/* Testimonial Image border */
+.RSWS_testi_img { border: 5px solid #CCCCCC; }
+
+/* Manage the image and alignment of both quotation */
+.RSWS_left_quote { padding-right:0px; margin-right:5px; }
+
+.RSWS_right_quote { padding-left:0px; margin-left:5px; }
+
+/* Manage Testimonial Text */
+.RSWS_testimonial { font-size:12px; font-weight:normal; text-align:justify; }
+
+/* Manage the Subtext of Testimonial, i.e. Date of Posting, Posted By etc. etc. */
+.RSWS_testmonial_subtext { text-align:right; }
+
+/* Manage Text and link of Pagination */
+.RSWS_pagination_text { text-align:center; }
+.RSWS_pagination_text a { }
+.RSWS_pagination_text a:hover { }
+
+/*********************************************************/
+/*** Manage the display of Testimonial Submission Form ***/
+/*********************************************************/
+
+/* Text "Submit A Testimonial" */
+.RSWS_form_heading { font-size:18px; font-weight:bold; border-bottom:1px solid #dedede; padding-bottom:5px; }
+
+/* Manage the Style of main Table */
+.RSWS_form_main { width:90%; }
+
+/* Manage the error Text */
+.RSWS_form_error { color:#ff0000; }
+.RSWS_form_error p { }
+.RSWS_form_error div ul li { }
+
+/* Manage the row that is displaying " * fields are mandatory" */
+.RSWS_form_mandatory { text-align:right; }
+
+/* Color of the "*" (Star) */
+.RSWS_form_star_color { color:#ff0000; }
+
+/* Manage width of the First Column, i.e. the column that is showing text like "Your First Name", "Your Last Name" etc. */
+.RSWS_form_first_col { width:25%; }
+
+/* Manage the style of text in the form */
+.RSWS_form_text {}
+
+/* Manage Input fields of the form */
+.RSWS_form_input { width:100%; }
+
+/* Manage Textarea field of the form */
+.RSWS_form_textarea { width:100%; height:150px; }
+
+/* Manage Button field of the form */
+.RSWS_form_button { width:auto; }
+
+/* Default style of tr and td */
+.RSWS_testi_block table.RSWS_form_main tr, .RSWS_testi_block table.RSWS_form_main td { border: none !important; padding:10px !important; }
+.RSWS_testi_block table.RSWS_testi_main tr, .RSWS_testi_block table.RSWS_testi_main td { border: none !important; padding:5px !important; }
+
+/* Responsiveness */
+@media screen and (max-width:450px) {
+.RSWS_testi_block table.RSWS_form_main td { width: 85%!important; float:left; }
+.RSWS_testi_block table.RSWS_form_main td input[type="file"] { width:100%; }
+.RSWS_testi_main td { width:90%!important; float:left; }
+}

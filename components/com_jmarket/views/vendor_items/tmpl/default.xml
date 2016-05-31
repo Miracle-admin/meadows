@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Vendor Items">
+  <message>Vendor menu. The vendors can see all their items.</message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="catalog" label="controller" description=""/>
+   <field name="task" type="text" default="listing" label="task" description=""/>
+   <field name="space" type="text" default="sitevendors" label="space" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="search" method="upgrade">
+	<name>plg_search_vmvendors</name>
+	<author>Nordmograph</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Nordmograph. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>www.nordmograph.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SEARCH_VMVENDORS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="vmvendors">vmvendors.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_search_vmvendors.ini</language>
+		<language tag="en-GB">en-GB.plg_search_vmvendors.sys.ini</language>
+		<language tag="fr-FR">fr-FR.plg_search_vmvendors.ini</language>
+		<language tag="fr-FR">fr-FR.plg_search_vmvendors.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="search_limit" type="text"
+					default="50"
+					description="JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC"
+					label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL"
+					size="5"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

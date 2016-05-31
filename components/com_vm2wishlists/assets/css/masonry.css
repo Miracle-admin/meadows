@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+.brick{
+	float:left;
+	width:200px;
+	
+	text-align:center;
+	padding-bottom:10px;
+	
+}
+.vm2t_product_thumb{
+	padding:10px;
+	text-align:center;
+}
+
+.vm2t_product_text{
+	float:left;
+	width:70%;
+	
+}
+
+.vm2t_product_name{
+	font-size:24px;
+}
+
+.vm2t_product_s_desc{
+}
+
+.vm2t_product_cat{
+}
+
+.vm2t_product_price{
+	text-align:center;
+	}
+.vm2t-featured{
+	float:right;
+}
+#vm2t_rssbuton{
+	float:right;
+}

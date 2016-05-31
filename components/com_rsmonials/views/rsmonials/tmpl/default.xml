@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RSMONIALS_RSMONIALS_VIEW_DEFAULT_TITLE">
+		<message>COM_RSMONIALS_RSMONIALS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="rsm_show_what" type="list" label="COM_RSMONIALS_RSMONIALS_FIELD_SHOWWHAT_LABEL" description="COM_RSMONIALS_RSMONIALS_FIELD_SHOWWHAT_DESC">
+				<option value="">Show Testimonials + Submission Form</option>
+				<option value="1">Show only the Testimonials</option>
+				<option value="2">Show only the Submission Form</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>
+

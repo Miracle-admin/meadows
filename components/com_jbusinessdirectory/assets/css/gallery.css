@@ -1,0 +1,155 @@
+.picture-container div.content {
+	width: 100%; 
+	max-width: 650px;
+}
+.picture-container div.content a, div.gallery-navigation a {
+	text-decoration: none;
+	color: #777!important;
+	line-height: 1px;
+}
+.picture-container div.content a:focus, div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+.picture-container div.controls {
+	margin-top: 5px;
+	height: 23px;
+}
+.picture-container div.controls a {
+	padding: 5px;
+}
+.picture-container div.ss-controls {
+	float: left;
+}
+.picture-container div.nav-controls {
+	float: right;
+}
+
+.picture-container div.slideshow-gallery-container {
+	position: relative;
+	clear: both;
+	border: 1px solid #EEE;
+}
+
+.picture-container div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 395px;
+	height: 402px; /* This should be set to be at least the height of the largest image in the slideshow-gallery */
+}
+.picture-container div.slideshow-gallery {
+
+}
+.picture-container div.slideshow-gallery span.image-wrapper {
+	display: block;
+}
+.picture-container div.slideshow-gallery a.advance-link {
+	display: block;
+	text-align: center;
+}
+.picture-container div.slideshow-gallery a.advance-link:hover, div.slideshow-gallery a.advance-link:active, div.slideshow-gallery a.advance-link:visited {
+	text-decoration: none;
+}
+.picture-container div.slideshow-gallery img {
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+.picture-container div.download {
+	float: right;
+}
+.picture-container div.caption-container {
+	position: relative;
+	clear: left;
+	height: 75px;
+	display: none;
+}
+.picture-container span.image-caption {
+	display: block;
+	position: absolute;
+	width: 385px;
+	top: 0;
+	left: 0;
+}
+.picture-container div.caption {
+	padding: 12px;
+}
+.picture-container div.image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+.picture-container div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+.picture-container div.gallery-navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+	width: 100%;
+}
+.picture-container ul.thumbs {
+	margin: 0;
+	padding: 0;
+}
+.picture-container ul.thumbs li {
+	float: left;
+	padding: 0;
+	padding-left: 0px !important;
+	margin: 5px 5px 5px 0!important;
+	list-style: none!important;
+	background-image: none!important;
+}
+.picture-container a.thumb {
+	padding: 2px;
+	display: block;
+	border: 1px solid #ccc;
+}
+.picture-container a.thumb  img{
+	margin: 0px!important;
+	padding: 0px!important;
+	width: 80px;
+	height: 65px;
+}
+
+.picture-container ul.thumbs li.selected a.thumb {
+	background: #000;
+}
+.picture-container a.thumb:focus {
+	outline: none;
+}
+.picture-container ul.thumbs img {
+	border: none;
+	display: block;
+}
+.picture-container div.pagination {
+	float: left;
+}
+.picture-container div.gallery-navigation div.top {
+	height: 11px;
+}
+.picture-container div.gallery-navigation div.bottom {
+	margin-top: 12px;
+}
+.picture-container div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
+}
+.picture-container div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+.picture-container div.pagination span.current {
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+.picture-container div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}

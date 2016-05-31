@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_categories/models/fields">
+		<field 
+			name="id"
+			type="text"
+			label="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_ID_LABEL"
+			description="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_ID_DESC"
+			maxlength="10"
+			filter="INTEGER"
+			class="readonly"
+			readonly="true"
+		/>
+		<field
+			name="webhook_name"
+			label="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_WEBHOOK_NAME_LABEL"
+			description="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_WEBHOOK_NAME_DESC"
+			type="text"
+			maxlength="500"
+			class="input-xxlarge input-large-text"
+		>
+		</field>
+		<field
+			name="last_triggered"
+			label="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_LAST_TRIGGERED_LABEL"
+			description="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_LAST_TRIGGERED_DESC"
+			type="calendar"
+			maxlength="500"
+		>
+		</field>
+		<field
+			name="active"
+			label="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_ACTIVE_LABEL"
+			description="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_ACTIVE_DESC"
+			type="status"
+			maxlength="1"
+		>
+		</field>
+		<field
+			name="logs"
+			label="Enable logs"
+			description="Logs will we generated inside the joomla logs folder."
+			type="status"
+			maxlength="1"
+		>
+		</field>
+		<field
+			name="trigger_count"
+			label="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_TRIGGER_COUNT_LABEL"
+			description="COM_BRAINTREEHOOKS_BRAINTREEHOOKS_FIELD_TRIGGER_COUNT_DESC"
+			type="integer"
+			maxlength="11"
+		>
+		</field>
+	</fieldset>
+	<fields name="">
+	</fields>
+</form>

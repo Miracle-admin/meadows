@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="My Orders">
+  <message>This will link the users to the list of their orders</message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="order" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

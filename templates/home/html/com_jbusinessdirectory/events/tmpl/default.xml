@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_J_BUSINESSDIRECTORY_MENUITEM_EVENTS">
+		<message>COM_J_BUSINESSDIRECTORY_MENUITEM_EVENT_INFO</message>
+	</layout>
+
+	<fields name="request">
+		<fieldset name="request">
+			<field name="resetSearch" type="radio" class="btn-group btn-group-yesno" default="1" label="Reset search" description="Reset search when the menu item is accessed">
+				  <option value="0">No</option>
+				  <option value="1">Yes</option>
+				</field>
+		</fieldset>
+	</fields>
+</metadata>

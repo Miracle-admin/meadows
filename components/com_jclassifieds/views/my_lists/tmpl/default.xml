@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="My Lists">
+  <message><![CDATA[User menu. The users can edit their list or add a new one.<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jclassifieds">
+   <field name="controller" type="text" default="wishlist-my" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

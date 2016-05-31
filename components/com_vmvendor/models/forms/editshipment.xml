@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="primaryfieldset">
+		<field 
+			name="shipment_name" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_NAME" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_NAME_DESC" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"
+		/>        
+		<field
+			name="shipment_desc" 
+			type="textarea"
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_DESCR"
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_DESCR_DESC" 
+			class="inputbox" 
+			filter="safehtml" 
+			height="100" 
+			rows="2" 
+		/>
+		<field 
+			name="shipment_published" 
+			type="list" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_PUBLISHED" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_PUBLISHED_DESC" 
+			default="0" 
+
+			>
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field 
+			name="show_on_pdetails" 
+			type="list" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_SHOWONPDETAILS" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_SHOWONPDETAILS_DESC" 
+			default="1" 
+
+			>
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field 
+			name="multicountries" 
+			type="multicountries" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_MULTICOUNTRIES" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_MULTICOUNTRIES_DESC"
+			filter="safehtml" 
+			multiple="multiple" 
+			class="chzn-custom-value"
+		 />  
+		<field 
+			name="ziprange_start" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_ZIPRANGESTART" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_ZIPRANGESTART_DESC" 
+			class="inputbox validate-numeric" 
+			filter="safehtml" 
+		/>
+		<field 
+			name="ziprange_end" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_ZIPRANGEEND" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_ZIPRANGEEND_DESC" 
+			class="inputbox validate-numeric validate-ziprange_end" 
+			filter="safehtml" 
+		/>
+		<field 
+			name="lowest_weight" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_LOWESTWEIGHT" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_LOWESTWEIGHT_DESC" 
+			class="inputbox validate-numeric" 
+			filter="safehtml" 
+		/>
+		<field 
+			name="highest_weight" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_HIGHESTWEIGHT" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_HIGHESTWEIGHT_DESC" 
+			class="inputbox validate-numeric" 
+			filter="safehtml" 
+		/>
+
+		<field 
+			name="weightunit" 
+			type="weightunit" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_WEIGHTUNIT" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_WEIGHTUNIT_DESC" 
+			class="inputbox" 
+			filter="safehtml" 
+		/>
+
+		<field 
+			name="minimum_orderproducts" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_MINORDERPRODUCTS" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_MINORDERPRODUCTS_DESC" 
+			class="inputbox validate-numeric" 
+			filter="safehtml" 
+		/>
+		<field 
+			name="maximum_orderproducts" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_MAXORDERPRODUCTS" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_MAXORDERPRODUCTS_DESC" 
+			class="inputbox validate-numeric" 
+			filter="safehtml" 
+		/>
+
+		<field 
+			name="minimum_orderamount" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_MINORDERAMOUNT" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_MINORDERAMOUNT_DESC" 
+			class="inputbox validate-numeric" 
+			filter="safehtml" 
+		/>
+		<field 
+			name="maximum_orderamount" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_MAXORDERAMOUNT" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_MAXORDERAMOUNT_DESC" 
+			class="inputbox validate-numeric" 
+			filter="safehtml" 
+		/>
+
+
+		<field 
+			name="shipment_cost" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_SHIPMENTCOST" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_SHIPMENTCOST_DESC" 
+			filter="safehtml" 
+			class="inputbox required validate-numeric" 
+			required="true"
+
+		/>
+		<field 
+			name="package_fee" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_PACKAGEFEE" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_PACKAGEFEE_DESC" 
+			class="inputbox validate-numeric" 
+			filter="safehtml" 
+		/>
+
+		<field 
+			name="shipmenttaxrules" 
+			type="shipmenttaxrules" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_SHIPMENTTAXRULES" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_SHIPMENTTAXRULES_DESC" 
+			class="inputbox"  
+		/>
+		<field 
+			name="freeshipment_amount" 
+			type="text" 
+			label="COM_VMVENDOR_EDITSHIPMENT_FORM_FREESHIPMENTAMOUNT" 
+			description="COM_VMVENDOR_EDITSHIPMENT_FORM_FREESHIPMENTAMOUNT_DESC" 
+			class="inputbox validate-numeric" 
+			filter="safehtml" 
+		/>
+    </fieldset>
+</form>

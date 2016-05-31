@@ -1,0 +1,7 @@
+#jbMenu .jbMenuIcon {
+    display: none;
+}
+#notify-menu
+{
+	z-index:9;
+	}

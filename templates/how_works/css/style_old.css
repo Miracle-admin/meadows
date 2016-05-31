@@ -1,0 +1,159 @@
+
+body { color: #222; letter-spacing: -0.3px;}
+
+a, li, div, section, aside, p { -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
+
+*, ul, li { margin: 0; padding: 0; font-family: 'ProximaNovaSoftRegular'; }
+
+@font-face { font-family: 'ProximaNovaSoftRegular'; src: url('../fonts/ProximaNovaSoftRegular.eot'); src: url('../fonts/ProximaNovaSoftRegular.eot') format('embedded-opentype'), url('../fonts/ProximaNovaSoftRegular.woff2') format('woff2'), url('../fonts/ProximaNovaSoftRegular.woff') format('woff'), url('../fonts/ProximaNovaSoftRegular.ttf') format('truetype'), url('../fonts/ProximaNovaSoftRegular.svg#ProximaNovaSoftRegular') format('svg'); }
+
+@font-face { font-family: 'ProximaNovaSoftMedium'; src: url('../fonts/ProximaNovaSoftMedium.eot'); src: url('../fonts/ProximaNovaSoftMedium.eot') format('embedded-opentype'), url('../fonts/ProximaNovaSoftMedium.woff2') format('woff2'), url('../fonts/ProximaNovaSoftMedium.woff') format('woff'), url('../fonts/ProximaNovaSoftMedium.ttf') format('truetype'), url('../fonts/ProximaNovaSoftMedium.svg#ProximaNovaSoftMedium') format('svg'); }
+
+@font-face { font-family: 'ProximaNovaSoftSemibold'; src: url('../fonts/ProximaNovaSoftSemibold.eot'); src: url('../fonts/ProximaNovaSoftSemibold.eot') format('embedded-opentype'), url('../fonts/ProximaNovaSoftSemibold.woff2') format('woff2'), url('../fonts/ProximaNovaSoftSemibold.woff') format('woff'), url('../fonts/ProximaNovaSoftSemibold.ttf') format('truetype'), url('../fonts/ProximaNovaSoftSemibold.svg#ProximaNovaSoftSemibold') format('svg'); }
+
+@font-face { font-family: 'ProximaNovaSoftBold'; src: url('../fonts/ProximaNovaSoftBold.eot'); src: url('../fonts/ProximaNovaSoftBold.eot') format('embedded-opentype'), url('../fonts/ProximaNovaSoftBold.woff2') format('woff2'), url('../fonts/ProximaNovaSoftBold.woff') format('woff'), url('../fonts/ProximaNovaSoftBold.ttf') format('truetype'), url('../fonts/ProximaNovaSoftBold.svg#ProximaNovaSoftBold') format('svg'); }
+
+header#header { clear: both; padding-top: 20px; padding-bottom: 30px; }
+
+a.logo { float: left; margin-left: 10px; }
+
+#hire-menu-wrap > li { float: left; }
+
+#hire-menu-wrap > li > a { color: #222; font-size: 16px; }
+
+#hire-menu-wrap > li > a:hover, #hire-menu-wrap > li.active a, ul#information-menu-wrap > li a:hover, ul#information-menu-wrap > li.active { background: #3174c5; color: #fff; border-radius: 4px; }
+
+ul#information-menu-wrap > li.active a { color: #fff; }
+
+.login-menu-wrap { float: right; margin-top: 10px; }
+
+ul#hire-menu-wrap { margin-top: 10px; }
+
+ul#login-menu-wrap > li > a { background: #458F14; border-radius: 4px; color: #fff; padding: 10px 30px; font-size: 16px; }
+
+.meadows-wrap { background: url('../images/home/meadows-bg.jpg') no-repeat; min-height: 745px; }
+
+ul#information-menu-wrap > li { float: left; }
+
+ul#information-menu-wrap { margin-top: 30px; }
+
+ul#information-menu-wrap > li a { color: #222; font-size: 16px; font-family: 'ProximaNovaSoftMedium'; }
+
+.social-info-wrap { float: right; margin-top: 30px; }
+
+.social-info-wrap > ul > li { float: left; list-style: none; }
+
+.social-info-wrap > ul > li a { font-size: 24px; color: #fff; margin: 0 0 0 10px; }
+
+.social-info-wrap > ul > li > strong { color: #FFF; font-size: 16px; margin-top: 6px; display: block; margin-right: 8px; }
+
+.main-banner-caption { text-align: center; margin-top: 80px; }
+
+.main-banner-caption h2 { font-size: 40px; letter-spacing: -3px; color: #000; }
+
+.main-banner-caption h2 > strong { font-size: 60px; }
+
+.main-banner-caption > h3 { color: #fff; letter-spacing: -1px; margin-bottom: 30px; }
+
+.bgopicty { background: url('../images/home/thumb-bg.png') repeat-x; background-size: contain; padding-top: 30px; padding-bottom: 40px; width: 32.3%; margin: 0 5px; /* border: 1px yellow solid; */ min-height: 335px; }
+
+.bgopicty > h3 { color: #fff; font-size: 40px; }
+
+.bgopicty > p { color: #fff; font-size: 18px; margin: 10px 0 40px 0; }
+
+.bgopicty > a { cursor: pointer; background: #82cd50; padding: 10px 40px; display: inline-block; color: #202020; font-size: 20px; border-radius: 4px; }
+
+.bgopicty > a:hover { background: #3174c5; text-decoration: none; color: #fff; }
+
+div#footer { padding-top: 50px; padding-bottom: 70px; background: #15202d; }
+
+.about-app-med-fot { color: #7f8d9f; }
+
+#footer h3 { color: #fff; margin-top: 40px; margin-bottom: 10px; }
+
+ul#footer-menu-wrap.nav > li { float: left; padding: 0; margin: 0; }
+
+ul#footer-menu-wrap.nav > li:first-child a { margin-left: 0; }
+
+ul#footer-menu-wrap.nav > li > a { padding: 0; margin: 0 10px; color: #7F8D9F; font-size: 16px; }
+
+ul#footer-menu-wrap.nav > li > a:hover { background: transparent; color: #fff; }
+
+.copyright { margin-top: 40px; color: #7F8D9F; }
+
+.custom.footer-social-wrap a { color: #7F8D9F; }
+
+.custom.footer-social-wrap { color: #7F8D9F; font-size: 16px; }
+
+ul#footer-menu-wrap { margin-top: 10px; }
+
+.meadows-newsletter .fieldacyemail { float: left; width: 80%; margin: 0; }
+
+.meadows-newsletter .fieldacyemail input { border: 0; padding: 18px; border-radius: 4px 0 0 4px; height: 60px; }
+
+.meadows-newsletter .acysubbuttons input { padding: 18px; border-radius: 0 3px 3px 0px; height: 60px; border: 0; }
+
+.meadows-newsletter .acysubbuttons { float: left; width: 20%; margin: 0; }
+
+.footer-social-wrap { clear: both; }
+
+.footer-social-wrap h3 { clear: both; }
+
+.meadows-newsletter { clear: both; float: left; width: 100%; margin-bottom: 52px; }
+
+div.meadows-newsletter div.acymailing_introtext { color: #fff; margin-bottom: 10px !important; }
+
+#meadoes-content-wrap { padding: 70px 0; }
+
+
+/* Home Page module CSS*/
+div.prod_price {
+    float: left;
+    margin-bottom: 5%;
+    width: 25%;
+}
+a.active {
+    border: 1px solid;
+}
+ul.tabs.page-tabs > li {
+    float: left;
+    list-style: outside none none !important;
+    margin-right: 5% !important;
+}
+.active2 a .new_name {
+    border: 1px solid;
+}
+ul.tabs.page-tabs {
+    float: left;
+    width: 30% !important;
+}
+div.ajax_prod_cat {
+    float: left;
+    margin-right: 5%;
+}
+.prod_price_cont {
+    float: left;
+    width: 25%;
+}
+.prod_price_cont > img {
+    width: 95%;
+}
+#product_containder .zoom {
+    display: none;
+	position: absolute;
+	z-index:2;
+	border:1px solid #000;
+	background:#fff;
+	width:500px;
+	float:left;
+}
+div.rsmonial_img {
+    float: left;
+    width: 25%;
+}
+.rsmonial_main {
+    clear: both;
+}
+.rsmonial_main li {
+    list-style: outside none none;
+}

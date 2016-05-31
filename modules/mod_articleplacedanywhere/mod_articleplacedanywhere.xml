@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>ARTICLES_PLACED_ANYWHERE</name>
+	<author>Ian MacLennan/Alan Hartless</author>
+	<creationDate>February 2008/July 2012</creationDate>
+	<copyright>Copyright (C) 2008 Ian MacLennan. All rights reserved. Portions Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.  Updated to Joomla 2.5 by Alan Hartless.  Copyright 2012 HartlessByDesign, LLC</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>alan@hartlessbydesign.com</authorEmail>
+	<version>1.1.6</version>
+	<description>ARTICLES_PLACED_ANYWHERE_DESCR</description>
+	<files>
+		<filename module="mod_articleplacedanywhere">mod_articleplacedanywhere.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_articleplacedanywhere.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_articleplacedanywhere.sys.ini</language>
+	</languages>
+	<config>
+        <fields name="params">
+        	<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+				<field name="id" type="modal_article" default="0" label="SELECT_ARTICLE" description="SELECT_ARTICLE_DESCR" />
+
+                <field name="show_intro_only" type="radio" default="1" label="SHOW_INTRO_ONLY" description="SHOW_INTRO_ONLY_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="show_title" type="radio" default="0" label="SHOW_TITLE" description="SHOW_TITLE_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="image" type="radio" default="1" label="SHOW_IMAGES" description="DISPLAY_ARTICLE_IMAGES">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+                <field name="show_author" type="radio" default="0" label="SHOW_AUTHOR" description="SHOW_AUTHOR_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="show_category" type="radio" default="0" label="SHOW_CATEGORY" description="SHOW_CATEGORY_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="show_parent_category" type="radio" default="0" label="SHOW_PARENT_CATEGORY" description="SHOW_PARENT_CATEGORY_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="show_create_date" type="radio" default="0" label="SHOW_CREATE_DATE" description="SHOW_CREATE_DATE_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="show_modify_date" type="radio" default="0" label="SHOW_MODIFY_DATE" description="SHOW_MODIFY_DATE_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="show_publish_date" type="radio" default="0" label="SHOW_PUBLISH_DATE" description="SHOW_PUBLISH_DATE_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="show_hits" type="radio" default="0" label="SHOW_HITS" description="SHOW_HITS_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="show_readmore" type="radio" default="1" label="SHOW_READMORE" description="SHOW_READMORE_DESCR">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+            </fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+				<field name="load_mootools" type="list" default="0" label="LOAD_MOOTOOLS" description="LOAD_MOOTOOLS">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Article Placed Anywhere Module"><![CDATA[http://devkardia.com/downloads/updates/modules/article-placed-anywhere?format=xml]]></server>
+    </updateservers>
+</extension>

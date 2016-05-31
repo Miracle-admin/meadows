@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Project dashboard.">
+		<message>
+			Do not assign this menu item.This is just here for compatibility puprposes.It doesnt work either.
+		</message>
+	</layout>
+	<state>
+		<name>Individual project dashboard.</name>
+		<description>Individual project dashboard.</description>
+	</state>
+</metadata>

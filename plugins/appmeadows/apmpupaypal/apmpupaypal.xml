@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="appmeadows" method="upgrade">
+	<name>Appmeadows upsell payment via paypal</name>
+	<author>Bipin Thakur</author>
+	<creationDate>July 2015</creationDate>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>bipin.singh@emptask.com</authorEmail>
+	<authorUrl></authorUrl>
+	<version>3.2.2</version>
+	<description>This plugin helps users to purchase their project upgrades via paypal, during registration</description>
+	<files>
+		<filename plugin="apmpupaypal">apmpupaypal.php</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+				<field name="paypal_id" type="text"
+					default=""
+					description="Enter your PayPal account ID to which payment shall be made. Example: paypal@mysite.com"
+					label="PayPal Email ID"
+					size="5"
+				/>
+				
+				<field name="currency_code" type="text"
+					default="USD"
+					description="For example USD for American dollar.Paypal will use this currency code to evaluate the payment price"
+					label="Currency code">
+					
+				</field>
+ 
+				<field name="test_mode" type="radio"
+					default="0"
+					description="Test Mode Set to Yes, if you wish to test your payment through PayPal. To sign up, visit http://www.sandbox.paypal.com"
+					label="Test Mode">
+					<option value="0">Off</option>
+					<option value="1">On</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

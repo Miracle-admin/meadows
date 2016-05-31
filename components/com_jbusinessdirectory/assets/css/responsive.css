@@ -1,0 +1,322 @@
+
+.row-fluid { width: 100%; *zoom: 1;
+}
+
+.row-fluid:before,
+.row-fluid:after { display: table; line-height: 0; content: ""; }
+
+.row-fluid:after { clear: both; }
+
+.row-fluid [class*="span"] { display: block; float: left; width: 100%; min-height: 30px; margin-left: 2.127659574468085%; *margin-left: 2.074468085106383%;
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.row-fluid [class*="span"]:first-child { margin-left: 0; }
+
+.row-fluid .controls-row [class*="span"] + [class*="span"] { margin-left: 2.127659574468085%; }
+
+.row-fluid .span12 { width: 100%; *width: 99.94680851063829%;
+}
+
+.row-fluid .span11 { width: 91.48936170212765%; *width: 91.43617021276594%;
+}
+
+.row-fluid .span10 { width: 82.97872340425532%; *width: 82.92553191489361%;
+}
+
+.row-fluid .span9 { width: 74.46808510638297%; *width: 74.41489361702126%;
+}
+
+.row-fluid .span8 { width: 65.95744680851064%; *width: 65.90425531914893%;
+}
+
+.row-fluid .span7 { width: 57.44680851063829%; *width: 57.39361702127659%;
+}
+
+.row-fluid .span6 { width: 48.93617021276595%; *width: 48.88297872340425%;
+}
+
+.row-fluid .span5 { width: 40.42553191489362%; *width: 40.37234042553192%;
+}
+
+.row-fluid .span4 { width: 31.914893617021278%; *width: 31.861702127659576%;
+}
+
+.row-fluid .span3 { width: 23.404255319148934%; *width: 23.351063829787233%;
+}
+
+.row-fluid .span2 { width: 14.893617021276595%; *width: 14.840425531914894%;
+}
+
+.row-fluid .span1 { width: 6.382978723404255%; *width: 6.329787234042553%;
+}
+
+.row-fluid .span12 { margin-left: 0 !important; }
+
+[class*="span"].hide,
+.row-fluid [class*="span"].hide { display: none; }
+
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right { float: right; }
+
+@media (min-width: 1200px) {
+
+.row-fluid:after { clear: both; }
+
+.row-fluid [class*="span"] { display: block; float: left; width: 100%; min-height: 30px; margin-left: 2.564102564102564%; *margin-left: 2.5109110747408616%;
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.row-fluid [class*="span"]:first-child { margin-left: 0; }
+
+.row-fluid .controls-row [class*="span"] + [class*="span"] { margin-left: 2.564102564102564%; }
+
+.row-fluid .span12 { width: 100%; *width: 99.94680851063829%;
+}
+
+.row-fluid .span11 { width: 91.45299145299145%; *width: 91.39979996362975%;
+}
+
+.row-fluid .span10 { width: 82.90598290598291%; *width: 82.8527914166212%;
+}
+
+.row-fluid .span9 { width: 74.35897435897436%; *width: 74.30578286961266%;
+}
+
+.row-fluid .span8 { width: 65.81196581196582%; *width: 65.75877432260411%;
+}
+
+.row-fluid .span7 { width: 57.26495726495726%; *width: 57.21176577559556%;
+}
+
+.row-fluid .span6 { width: 48.717948717948715%; *width: 48.664757228587014%;
+}
+
+.row-fluid .span5 { width: 40.17094017094017%; *width: 40.11774868157847%;
+}
+
+.row-fluid .span4 { width: 31.623931623931625%; *width: 31.570740134569924%;
+}
+
+.row-fluid .span3 { width: 23.076923076923077%; *width: 23.023731587561375%;
+}
+
+.row-fluid .span2 { width: 14.52991452991453%; *width: 14.476723040552828%;
+}
+
+.row-fluid .span1 { width: 5.982905982905983%; *width: 5.929714493544281%;
+}
+}
+
+.pagination { margin: 20px 0; padding: 0; clear: both; line-height: 22px; }
+
+.pagination .limit { display: inline-block; float: left!important; }
+
+.pagenav { padding: 2px }
+
+.pagination select { display: inline-block; min-height: 22px }
+
+.pagination ul { border-radius: 4px; display: inline-block; margin-bottom: 0; margin-left: 0; }
+
+.pagination ul > li { display: inline; text-align: left; }
+
+.pagination ul > li > a,
+.pagination ul > li > span { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #fff; border-color: #ddd; border-image: none; border-style: solid; border-width: 1px 1px 1px 0; float: left; line-height: 20px; /* padding: 6px 12px; */ text-decoration: none; }
+
+.pagination ul > li > a:hover,
+.pagination ul > li > a:focus,
+.pagination ul > .active > a,
+.pagination ul > .active > span { background-color: #f5f5f5; }
+
+.pagination ul > .active > a,
+.pagination ul > .active > span { color: #999; cursor: default; }
+
+.pagination ul > .disabled > span,
+.pagination ul > .disabled > a,
+.pagination ul > .disabled > a:hover,
+.pagination ul > .disabled > a:focus { background-color: transparent; color: #999; cursor: default; }
+
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span { border-bottom-left-radius: 4px; border-left-width: 1px; border-top-left-radius: 4px; }
+
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span { border-bottom-right-radius: 4px; border-top-right-radius: 4px; }
+
+.pagination-centered { text-align: center; }
+
+.pagination-right { text-align: right; }
+
+.pagination-large ul > li > a,
+.pagination-large ul > li > span { font-size: 17.5px; padding: 11px 19px; }
+
+.pagination-large ul > li:first-child > a,
+.pagination-large ul > li:first-child > span { border-bottom-left-radius: 6px; border-top-left-radius: 6px; }
+
+.pagination-large ul > li:last-child > a,
+.pagination-large ul > li:last-child > span { border-bottom-right-radius: 6px; border-top-right-radius: 6px; }
+
+.pagination-mini ul > li:first-child > a,
+.pagination-small ul > li:first-child > a,
+.pagination-mini ul > li:first-child > span,
+.pagination-small ul > li:first-child > span { border-bottom-left-radius: 3px; border-top-left-radius: 3px; }
+
+.pagination-mini ul > li:last-child > a,
+.pagination-small ul > li:last-child > a,
+.pagination-mini ul > li:last-child > span,
+.pagination-small ul > li:last-child > span { border-bottom-right-radius: 3px; border-top-right-radius: 3px; }
+
+.pagination-small ul > li > a,
+.pagination-small ul > li > span { font-size: 11.9px; padding: 2px 10px; }
+
+.pagination-mini ul > li > a,
+.pagination-mini ul > li > span { font-size: 10.5px; padding: 0 6px; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+[class*="span"] { float: left; min-height: 1px; margin-left: 20px; }
+
+.row-fluid { width: 100%; *zoom: 1;
+}
+
+.row-fluid:before,
+ .row-fluid:after { display: table; line-height: 0; content: ""; }
+
+.row-fluid:after { clear: both; }
+
+.row-fluid [class*="span"] { display: block; float: left; width: 100%; min-height: 30px; margin-left: 2.7624309392265194%; *margin-left: 2.709239449864817%;
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.row-fluid [class*="span"]:first-child { margin-left: 0; }
+
+.row-fluid .controls-row [class*="span"] + [class*="span"] { margin-left: 2.7624309392265194%; }
+
+.row-fluid .span12 { width: 100%; *width: 99.94680851063829%;
+}
+
+.row-fluid .span11 { width: 91.43646408839778%; *width: 91.38327259903608%;
+}
+
+.row-fluid .span10 { width: 82.87292817679558%; *width: 82.81973668743387%;
+}
+
+.row-fluid .span9 { width: 74.30939226519337%; *width: 74.25620077583166%;
+}
+
+.row-fluid .span8 { width: 65.74585635359117%; *width: 65.69266486422946%;
+}
+
+.row-fluid .span7 { width: 57.18232044198895%; *width: 57.12912895262725%;
+}
+
+.row-fluid .span6 { width: 48.61878453038674%; *width: 48.56559304102504%;
+}
+
+.row-fluid .span5 { width: 40.05524861878453%; *width: 40.00205712942283%;
+}
+
+.row-fluid .span4 { width: 31.491712707182323%; *width: 31.43852121782062%;
+}
+
+.row-fluid .span3 { width: 22.92817679558011%; *width: 22.87498530621841%;
+}
+
+.row-fluid .span2 { width: 14.3646408839779%; *width: 14.311449394616199%;
+}
+
+.row-fluid .span1 { width: 5.801104972375691%; *width: 5.747913483013988%;
+}
+}
+
+@media (max-width: 767px) {
+
+[class*="span"],
+ .uneditable-input[class*="span"],
+ .row-fluid [class*="span"] { display: block; float: none; width: 100%; margin-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.span12,
+ .row-fluid .span12 { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.row-fluid [class*="offset"]:first-child { margin-left: 0; }
+}
+
+@media (max-width: 767px) {
+
+.category-form-container { width: 95%; }
+
+.picture-table .img_picture_company,
+.picture-table .img_picture_offer { width: 100px; }
+
+.picture-table .key { display: none; }
+
+.picture-table textarea { width: 100px; }
+
+.detail_box select { width: 95%; }
+
+.add-review textarea { width: 100%; }
+
+#slidergallery ul.gallery li { width: 45%; }
+
+#slidergallery ul.gallery li img { width: 100%; height: auto; }
+
+.category-content { height: auto !important; }
+
+#grid-content .post { width: 30% !important; margin: 1% !important; }
+
+#invoice .dialogContent { width: 300px; }
+
+.business-hour input { width: 100px; }
+
+.grid-style2 .grid-item .grid-content { height: auto; }
+
+#location-dialog .dialogContent { width: auto; }
+}
+
+@media (max-width: 480px) {
+
+.detail_box input,
+.upload-buttons input { width: 95% !important; }
+
+.detail_box textarea { width: 95%; }
+
+#one-page-container #company-info { width: 100%; }
+
+#one-page-container .company-image { width: 100%; }
+
+.one-page-container .company-info-container { width: 100%; }
+
+#one-page-container #social-networks-container { margin: 10px 0; }
+
+.one-page-container dt { float: none; }
+
+#reviews .reviewer-name { width: 100%; padding-left: 10px; }
+
+.search-toggles { float: none; width: 100%; }
+
+.compact-list .content-box { float: none; width: 100%; }
+
+.compact-list .result { padding: 10px 0px 0px; }
+
+.result .company-rating { float: left; margin-left: 0; width: 100%; display: inline; }
+
+.grid4 .post { width: 95%; }
+
+#dialog-container { padding: 0; }
+
+.dialogContent { max-width: 95%; }
+
+.dialogContent input,
+.dialogContent select,
+.dialogContent textarea { width: 95%; }
+
+#slidergallery ul.gallery li { width: 100%; }
+
+.category-content .category-img-container { width: 100%; margin-bottom: 10px; }
+
+#grid-content .post { width: 100% !important; margin: 1% !important; }
+
+#grid-content .post { width: 100% !important; }
+
+#invoice .dialogContent { width: 300px; }
+
+.business-hour input { width: 80px; }
+
+#categories-accordion li.accordion-element { width: 100%; }
+}

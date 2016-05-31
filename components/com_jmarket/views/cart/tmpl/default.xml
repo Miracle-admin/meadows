@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Cart">
+  <message><![CDATA[Link to the cart or basket.<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="basket" label="controller" description=""/>
+   <field name="task" type="text" default="check" label="task" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

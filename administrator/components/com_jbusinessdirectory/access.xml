@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_jbusinessdirectory">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+		<action name="directory.access.directory.management" title="JACTION_ACCESS_DIRECTORY_MANAGEMENT" description="JACTION_ACCESS_DIRECTORY_MANAGEMENT_COMPONENT_DESC" />
+		<action name="directory.access.listings" title="JACTION_ACCESS_LISTINGS" description="JACTION_ACCESS_LISTINGS_COMPONENT_DESC" />
+		<action name="directory.access.categories" title="JACTION_ACCESS_CATEGORIES" description="JACTION_ACCESS_CATEGORIES_COMPONENT_DESC" />
+		<action name="directory.access.events" title="JACTION_ACCESS_EVENTS" description="JACTION_ACCESS_EVENTS_COMPONENT_DESC" />
+		<action name="directory.access.offers" title="JACTION_ACCESS_OFFERS" description="JACTION_ACCESS_OFFERS_COMPONENT_DESC" />
+		<action name="directory.access.discounts" title="JACTION_ACCESS_DISCOUNTS" description="JACTION_ACCESS_DISCOUNTS_COMPONENT_DESC" />
+		<action name="directory.access.payment.config" title="JACTION_ACCESS_PAYMENT_CONFIG" description="JACTION_ACCESS_PAYMENT_CONFIG_COMPONENT_DESC" />
+		<action name="directory.access.packages" title="JACTION_ACCESS_PACKAGES" description="JACTION_ACCESS_PACKAGES_COMPONENT_DESC" />
+		<action name="directory.access.countries" title="JACTION_ACCESS_COUNTRIES" description="JACTION_ACCESS_COUNTRIES_COMPONENT_DESC" />
+		<action name="directory.access.reviews" title="JACTION_ACCESS_REVIEWS" description="JACTION_ACCESS_REVIEWS_COMPONENT_DESC" />
+		<action name="directory.access.emails" title="JACTION_ACCESS_EMAILS" description="JACTION_ACCESS_EMAILS_COMPONENT_DESC" />
+		<action name="directory.access.reports" title="JACTION_ACCESS_REPORTS" description="JACTION_ACCESS_REPORTS_COMPONENT_DESC" />
+		<action name="directory.access.cities" title="JACTION_ACCESS_CITIES" description="JACTION_ACCESS_CITIES_COMPONENT_DESC" />
+		<action name="directory.access.controlpanel" title="JACTION_ACCESS_CONTROL_PANEL" description="JACTION_ACCESS_CONTROL_PANEL_COMPONENT_DESC" />
+		<action name="directory.access.bookmarks" title="JACTION_ACCESS_BOOKMARKS" description="JACTION_ACCESS_BOOKMARKS_COMPONENT_DESC" />
+	</section>
+</access>

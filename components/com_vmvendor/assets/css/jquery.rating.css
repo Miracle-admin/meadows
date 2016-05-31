@@ -1,0 +1,55 @@
+.vmvrating {
+	cursor: pointer;
+	clear: both;
+	display: block;
+}
+.vmvrating:after {
+	content: '.';
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+	visibility: hidden;
+}
+.cancel,
+.vmvstar {
+	float: left;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.vmvstar-left,
+.vmvstar-right {
+  width: 13px
+}
+.cancel,
+.cancel a {background: url(../img/delete.gif) no-repeat 0 -25px;}
+
+.vmvstar,
+.vmvstar a {background: url(../img/star.png) no-repeat 0 0px;}
+.vmvstar-left,
+.vmvstar-left a {background: url(../img/star-left.png) no-repeat 0 0px;}
+.vmvstar-right,
+.vmvstar-right a {background: url(../img/star-right.png) no-repeat 0 0px;}
+	
+.cancel a,
+.vmvstar a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: 0 0px;
+}
+
+div.vmvrating div.on a {
+	background-position: 0 -25px;
+}
+div.vmvrating div.hover a,
+div.vmvrating div a:hover {
+	background-position: 0 -50px;
+}
+
+#form1{
+	margin-bottom: 0;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Display one Category">
+  <message><![CDATA[Display one category of the store. Specify a eid to define which category to view.<br>eid is the category ID.]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jclassifieds">
+   <field name="controller" type="text" default="catalog" label="controller" description=""/>
+   <field name="task" type="text" default="category" label="task" description=""/>
+   <field name="eid" type="text" default="specify category id here" label="eid" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

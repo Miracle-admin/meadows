@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="JoomBri Developer Registration">
+		<message>
+			<![CDATA[JoomBri Developer Registration Form - Step 1.]]>
+		</message>
+	</layout>
+	<state>
+		<name>JoomBri Developer Registration</name>
+		<description>JoomBri Developer Registration Form - Step 1.</description>
+	</state>
+</metadata>

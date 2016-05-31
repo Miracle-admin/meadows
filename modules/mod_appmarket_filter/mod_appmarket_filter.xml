@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module"
+           version="3.0"
+           method="upgrade">
+	<name>APP Market Module Filter</name>
+	<creationDate>January 17, 2014</creationDate>
+	<author>Matt Thomas</author>
+	<authorUrl>http://betweenbrain.com</authorUrl>
+	<copyright>Copyright (C) 2013 betweenbrain llc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2, or later.</license>
+	<version>3.0.1</version>
+	<description>APP Market Module!</description>
+
+	<files>
+		<filename module="mod_appmarket_filter">mod_appmarket_filter.php</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+
+</extension>

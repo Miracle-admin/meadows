@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+#visitcount_btn{
+	float:left;
+	padding: 0 10px 0 0
+}
+.wvmp_visitor{
+	float:left;
+	border:1px solid #ddd;
+	padding:5px;
+	margin:5px;
+	width:300px;
+}
+.wvmp_thumb{
+	float:left;
+	width:64px;
+	margin:0 10px 0 0;
+	background-color:#fff;
+}
+#visits_chart{
+	height:300px
+}
+#vmv-backbutton{float:right}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Affiliate Programs">
+  <message><![CDATA[This link to the Homepage of jStore.<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jaffiliates">
+   <field name="controller" type="text" default="affiliate" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

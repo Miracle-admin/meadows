@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Cron task">
+  <message>Link to trigger the cron of the website</message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jcenter">
+   <field name="controller" type="text" default="scheduler" label="controller" description=""/>
+   <field name="task" type="text" default="process" label="task" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

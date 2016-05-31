@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="primaryfieldset">
+		<field 
+            name="vendor_title" 
+            type="text" 
+            label="COM_VMVENDOR_EDITPRO_VENDORTITLE" 
+            description=""
+            filter="safehtml" 
+            class="inputbox required" 
+            required="true"
+			 />        
+		<field name="vendor_image" 
+			type="file"
+			label="COM_VMVENDOR_EDITPRO_VENDORIMG"
+			description="" 
+			accept="image/*" 
+			class="inputbox " />
+		<field 
+			name="vendor_telephone" 
+			type="text" 
+			class="inputbox"
+			label="COM_VMVENDOR_EDITPRO_VENDORTEL" 
+			description="" 
+			filter="safehtml" />
+		<field 
+			name="vendor_address" 
+			type="text" 
+			class="inputbox"
+			label="COM_VMVENDOR_EDITPRO_VENDORADDRESS" 
+			description="" 
+			filter="safehtml" />
+		<field 
+			name="vendor_city" 
+			type="text" 
+			class="inputbox"
+			label="COM_VMVENDOR_EDITPRO_VENDORCITY" 
+			description="" 
+			filter="safehtml" />
+		<field 
+			name="vendor_zip" 
+			type="text" 
+			class="inputbox"
+			label="COM_VMVENDOR_EDITPRO_VENDORZIP" 
+			description="" 
+			filter="safehtml" />
+		<field 
+			name="vendor_country" 
+			type="vendor_country" 
+			class="inputbox"
+			label="COM_VMVENDOR_EDITPRO_VENDORCOUNTRY" 
+			description="" 
+			filter="safehtml" />
+		<field 
+			name="vendor_url" 
+			type="url" 
+			class="inputbox" 
+			filter="url"
+			label="COM_VMVENDOR_EDITPRO_VENDORURL" 
+			description="COM_VMVENDOR_EDITPRO_VENDORURL_DESC" 
+			 />
+			 
+		<field 
+			name="vendor_store_desc" 
+			type="editor" 
+			label="COM_VMVENDOR_EDITPRO_VENDORDESC" 
+			filter="safehtml" 
+			height="50" 
+			rows="2" 
+			 />
+		<field 
+			name="vendor_terms_of_service" 
+			type="editor" 
+			class="inputbox" 
+			label="COM_VMVENDOR_EDITPRO_VENDORTOS" 
+			filter="safehtml" 
+			height="50" 
+			rows="2" 
+			 />
+		<field 
+			name="vendor_legal_info" 
+			type="editor" 
+			label="COM_VMVENDOR_PROFILE_LEGALINFO" 
+			filter="safehtml"
+			height="50" 
+			rows="2" 
+			 />
+		<field 
+			name="activity_stream" 
+			type="checkbox" 
+			label="COM_VMVENDOR_EDITPRO_ACTIVITYSTREAM" 
+			description="" 
+			value="1" />
+    </fieldset>
+
+    <fieldset name="secondaryfieldset">
+		<field 
+            name="paypal_email" 
+            type="email" 
+            label="COM_VMVENDOR_EDITPRO_PAYPALEMAIL" 
+            description="COM_VMVENDOR_EDITPRO_PAYPALEMAIL_DESC" 
+			filter="safehtml" 
+			 /> 
+    </fieldset>
+</form>

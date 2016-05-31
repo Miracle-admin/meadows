@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension	type="module" ersion="3.0"	client="site"	method="upgrade">
+	<name>JBusinessDirectory - Latest Businesses</name>
+	<creationDate>November 2013</creationDate>
+	<author>CMSJunkie</author>
+	<copyright>(C) CMSJunkie. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@cmsjunkie.com</authorEmail>
+	<authorUrl>www.cmsjunkie.com</authorUrl>
+	<version>3.0.0</version>	
+	<description>JBusinessDirectory</description>
+	
+	<files>
+		<filename module="mod_jbusiness_latest">mod_jbusiness_latest.php</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jbusiness_latest.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_jbusinessdirectory/models/fields">
+				<field name="layout-type" type="list" default="horizontal" label="Layout type" 
+					description="How will module will be displayed, horizontal or vertical">
+						<option value="horizontal">horizontal</option>
+   						 <option value="vertical">vertical</option>
+				</field>
+				<field
+					name="categoryIds"
+					type="businesscategories"
+					multiple="true"
+					size="10"
+					default=""
+					label="Categories"
+					description="Select categories" >
+				</field>
+				<field
+					name="city"
+					type="businesscities"
+					multiple="false"
+					size="10"
+					default=""
+					label="City"
+					description="Select city" >
+				</field>
+				<field
+					name="count"
+					type="text"
+					default="8"
+					label="Number of businesses"
+					description="Number of businesses that will be displayed" />
+
+				<field
+					name="only_featured"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="Only featured"
+					description="Show only featurd businesses">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+				
+				<field
+					name="order"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="Ordering"
+					description="Set ordering for diplaying latest business listings">
+					<option
+						value="1">Creation date</option>
+					<option
+						value="0">Random</option>
+				</field>
+				
+				<field
+					name="backgroundColor"
+					type="text"
+					default="#EAEAEA"
+					label="Item background color"
+					description="The background color of latest business item" />
+				<field
+					name="borderColor"
+					type="text"
+					default="#AAAAAA"
+					label="Item border color"
+					description="The background color of border of latest business item" />
+				
+				<field
+					name="slider"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="Slider"
+					description="Show only featurd businesses">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+				
+				<field
+					name="nrVisibleItems"
+					type="text"
+					default="4"
+					label="Visible items"
+					description="Number of business that will be visible at one time" />
+					
+				<field
+					name="nrItemsToScrool"
+					type="text"
+					default="1"
+					label="Number of items to scrool"
+					description="Number of businesses that will be scrooled" />
+					
+				<field
+					name="autoplay"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="Autoplay"
+					description="Automatic scroll">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+				
+				<field
+					name="autoplaySpeed"
+					type="text"
+					default="2000"
+					label="Autoplay Speed"
+					description="Speef of the autoplay" />
+
+				
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

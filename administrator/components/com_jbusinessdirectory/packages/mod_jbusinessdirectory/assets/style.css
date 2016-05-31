@@ -1,0 +1,364 @@
+#companies-search textarea:focus, #companies-search input:focus, #companies-search select:focus, #companies-search password:focus  {
+   border-color: rgba(82, 168, 236, 0.9);
+   box-shadow: 0 1px 1px rgba(0, 2, 2, 0.075) inset, 0 0 3px rgba(82, 168, 236, 0.7) inset;
+   outline: 0 none;
+}
+
+#companies-search textarea.required, #companies-search input.required, #companies-search select.required , #companies-search div.required a{
+   border-color: rgba(82, 168, 236, 0.9);
+   box-shadow: 0 1px 1px rgba(0, 5, 5, 0.085) inset, 0 0 3px rgba(254, 9, 0, 1) inset;
+   outline: 0 none;
+}
+
+.ui-autocomplete-loading {
+	background: white url('../images/loading_small.gif') right center no-repeat;
+}
+
+#loading-geo-locaiton{
+	height: 15px;
+    width: 17px;
+	display: inline-block;
+};
+
+#searchform .form-container {
+    float: left;
+}
+
+#searchform .form-field {
+    float: left;
+	margin: 5px 10px 0 0;
+	position: relative;
+	line-height: 42px;
+}
+
+#searchform .form-field div.custom-div{
+	float: left;
+	line-height: 42px;
+	margin-right: 5px;
+}
+#searchform .form-field div.custom-div input{
+	margin: 0 3px 0 0;
+}
+
+#searchform .form-field label{
+	float: left;
+	margin: 0 10px 0 0;
+	line-height: 40px;
+}
+
+#searchform .form-field select, #searchform .form-field input[type="text"]{
+	border-color: #9B9B9B #EDEDED #DDDDDD #C2C2C2;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	display: inline-block;
+	color: #333333;
+	font-size: 14px;
+	font-weight: normal;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0px 13px;
+	width: 222px;
+	position: relative;
+}
+
+#searchform .chosen-container-single {
+	height: 39px;
+}
+
+#searchform .chosen-container-single .chosen-search input[type="text"]{
+	width: 100%;
+}
+
+.chosen-container-single .chosen-single div:before {
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+	content:"\f107";
+	font-size: 19px;
+    display: block;
+    line-height: 45px;
+    text-align: center;
+   
+}
+
+.chosen-container-single .chosen-single div{
+	 width: 23px;
+}
+
+#searchform .form-field .detail_box{
+	float: left;
+	margin: 5px 10px 0 0;
+    position: relative;
+    width: 222px;
+}
+
+#searchform .form-field .detail_box div{
+	float:left;
+	margin: 5px 10px 0 0;
+}
+
+#searchform .form-field input{
+}
+
+#searchform .form-field select {
+    height: 40px;
+}
+
+
+#companies-search.vertical{
+	background-color: #FAFAFA;
+	padding: 5px 7px;
+}
+
+#companies-search.vertical input[type="text"]{
+	width: 100%;
+}
+
+#companies-search.vertical #zipcode{
+	width: 100%;
+}
+
+#companies-search.vertical .dir-icon-bullseye{
+	right: 14px;
+}
+
+#companies-search.vertical .form-field{
+	float: none;
+	clear: both;
+	margin: 7px 0 !important;
+	padding: 0 !important;
+}
+
+#companies-search.vertical .form-field select{
+	width: 100%;
+	font-size: 13px;
+	display:block;
+}
+
+#companies-search.vertical .form-container{
+	float: none;
+}
+
+#companies-search.vertical  label{
+	font-size: 13px;
+	top: 0px;
+}
+
+#searchform .search-dir-button{
+	float: left;
+	margin-top: 5px! important;
+	font-weight: bold;
+	padding: 0px 10px;
+	color: #FFFFFF;
+	font-size: 13px;
+	line-height: 41px;
+	height: 41px;
+}
+
+#current-search {
+    color: #FFFFFF;
+    font-size: 1.1em;
+    float: left;
+    line-height: 40px;
+    padding:  0 10px;
+}
+
+#categories-link {
+    font-size: 1.3em;
+	color: #FFFFFF;
+	float: left;
+	line-height: 32px;
+	padding: 4px;
+	margin-left: 100px;
+}
+
+.custom-combobox {
+	position: relative;
+	display: inline-block;
+}
+
+.custom-combobox-toggle {
+	/* position: absolute;  */
+	top: 0;
+	bottom: 0;
+	/* margin-left: -1px; */
+	padding: 0;
+	/* support: IE7 */
+	*height: 1.7em;
+	*top: 0.1em;
+}
+
+.custom-combobox-input {
+	margin: 0;
+	padding: 0.3em;
+}
+
+/*-- autocomplete ---*/
+
+.ui-autocomplete {
+	max-height: 200px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+	height: 200px;
+}
+
+.ui-autocomplete.ui-front.ui-menu{
+	z-index: 11000!important;
+}
+
+#searchform .ui-button{
+	height: 29px;
+	margin-left:1px;
+}
+
+.ui-icon-triangle-1-s {
+    background-position: -128px 0;
+}
+
+
+#companies-search .dir-icon-bullseye{
+ 	background: #eeeeee;
+    border-radius: 0 5px 5px 0;
+    color: #555;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 31px;
+    z-index: 1;
+    margin: 0;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#companies-search .dir-icon-bullseye:hover{
+	 font-size: 23px;
+	 background: #FAFAFA;
+	-webkit-transform: translate3d(0, 0, 10px);
+    -moz-transform: translate3d(0, 0, 10px);
+    -ms-transform: translate3d(0, 0, 10px);
+    -o-transform: translate3d(0, 0, 10px);
+}
+
+#companies-search .dir-icon-map-marker{
+    top: 10px;
+    left: 5px;
+    font-size: 22px;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    color: #555;
+    margin: 0;
+}
+
+#searchform  #zipcode{
+	padding-left: 30px !important;
+	width: 180px;
+}
+
+
+#dir-search-preferences:before {
+    border-color: transparent  transparent #ffffff;
+    border-style: solid;
+    border-width:0 7px 8px;
+    top: -8px;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 13px;
+    width: 0;
+}
+
+
+#dir-search-preferences{
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #afafaf;
+    box-shadow: 1px 1px 0 rgba(80, 80, 80, 0.2);
+    color: #333333;
+    display: block;
+    padding: 10px 10px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 245px;
+    z-index: 999;
+}
+
+#searchform h3.title{
+	font-size: 19px;
+	line-height: 23px;
+}
+
+
+#searchform h3.title i.dir-icon-close{
+	border-radius: 50%;
+	background-color: #BABABA;
+	width: auto;
+	height: auto;
+	float: right;
+	padding: 5px 8px;
+	color: #FAFAFA;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+#searchform .geo-radius{
+	padding-bottom: 3px;
+}
+
+#searchform  .geo-location{
+	clear: both;
+	float: right;
+	padding-top: 10px;
+	font-size: 13px;
+}
+
+.geo-location .toggle{
+	  background-color: #f5f5f5;
+	  border-color: #bbb #bbb #a2a2a2;
+	  padding: 4px 12px;
+	  text-align: center;
+	  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	  text-decoration: none;
+	  font-size: 12px !important;
+}
+
+.geo-location .toggle.btn-on.active{
+	background-color: #83b802;
+	color: #FFFFFF;
+}
+
+.geo-location .toggle.btn-off.active{
+	background-color: #bd362f;
+	color: #FFFFFF;
+}
+#companies-map img{
+    width: auto;
+    max-width: none ;
+}
+
+
+@media (max-width: 480px) {
+	#dir-search-preferences{
+		left:0;
+	}
+	
+	#dir-search-preferences::before{
+		left: 13px;
+	}
+}

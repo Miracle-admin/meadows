@@ -1,0 +1,113 @@
+
+.module.progress-box {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 3px;
+    border-top: 5px solid #0087D0 !important;
+    box-shadow: 0 1px 1px 0 #A4A3A3;
+    margin: 0 0 14px;
+    padding: 20px;
+    position: relative;
+}
+
+.progress-container{
+	text-align: center	
+}
+
+.progress-container h1{
+	font-size: 24px;
+	color: #067AB4;
+}
+
+
+.progress-container h1{
+	font-size: 32px;
+	color: #067AB4;
+}
+
+.progress-steps{
+	margin: 20px auto;
+	
+}
+
+.progress-step{
+	display: inline-block;
+	max-width: 330px;
+    min-width: 270px;
+}
+
+.progress-steps .progress-img {
+    float: left;
+    margin-right: 10px;
+}
+
+
+.progress-steps .profile {
+    background-image: url("images/add_user.png");
+    display: block;
+    height: 100px;
+    margin: 10px 0 0 10px;
+    width: 100px;
+}
+
+.progress-steps .business {
+    background-image: url("images/add_business_gray.png");
+    display: block;
+    height: 100px;
+    margin: 10px 0 0 10px;
+    width: 100px;
+}
+
+.progress-steps .progress.business.current{
+	background-image: url("images/add_business.png");
+}
+
+.step {
+    background: none repeat scroll 0 0 #B1B1B1;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+    display: block;
+    height: 34px;
+    left: -7px;
+    position: relative;
+    top: -3px;
+    width: 34px;
+}
+
+.current .step {
+    background: none repeat scroll 0 0 #00A2DB;
+}
+
+.completed .step {
+    background: none repeat scroll 0 0 #83B802;
+}
+
+.step i {
+    color: #FFFFFF;
+    font-family: depotnewmedium;
+    font-size: 19px;
+    font-style: normal;
+    left: 12px;
+    position: absolute;
+    top: 4px;
+}
+
+.progress-steps h3 {
+    margin: 10px 0 13px 0;
+    color: #004A73;
+    font-size: 19px;
+    line-height: 18px;
+}
+
+.progress-steps .progress-content{
+	text-align: left;
+}
+
+
+.progress-steps .bottom {
+    font-size: 13px;
+    line-height: 155%;
+    margin-bottom: 12px;
+    position: relative;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+	<name>RSMonials Scroller Module</name>
+	<author>RS Web Solutions</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>Copyright (c) 2013-2022 RS Web Solutions - Development Team</copyright>
+	<license>@license GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>support@rswebsols.com</authorEmail>
+	<authorUrl>http://www.rswebsols.com</authorUrl>
+	<version>2.2</version>
+	<description>RS-MonialScroller is a Module developed for Joomla! and for RS-Monilals Component. If you do not have the Component please go to http://www.rswebsols.com and download it. This will only work if you are using our Rs-Monials Component. Using this module you can able to display all of your testimonials in a module position with auto scroller.</description>
+	<files>
+		<filename module="mod_rsmonialscroller">mod_rsmonialscroller.php</filename>
+		<filename>mod_rsmonialscroller.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+            <fieldset name="basic">
+				<field name="rsm_scroller_width" type="text" default="200" label="Module Width" description="Width of the Module" />
+				<field name="rsm_scroller_height" type="text" default="200" label="Module Height" description="Height of the Module" />
+				<field name="rsm_scroller_border_thickness" type="list" default="0" label="Border Thickness" description="Module Border Thickness">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</field>
+				<field name="rsm_scroller_border_style" type="list" default="solid" label="Border Style" description="Module Border Style">
+					<option value="solid">solid</option>
+					<option value="dotted">dotted</option>
+					<option value="dashed">dashed</option>
+				</field>
+				<field name="rsm_scroller_border_color" type="text" default="#CCCCCC" label="Border Color" description="Module Border Color, including # (Example: #CCCCCC)" />
+				<field name="rsm_align" type="list" default="left" label="Text Alignment" description="Select the alignment of the testimonial text, by default it is 'left' aligned">
+					<option value="justify">Justify</option>
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="right">Right</option>			
+				</field>
+				<field name="rsm_scroller_padding" type="text" default="5" label="Padding" description="Module Padding from Border" />
+				<field name="rsm_scroller_delay" type="list" default="5000" label="Scrolling Delay" description=" Scrolling Delay Time in Seconds">
+					<option value="1000">1</option>
+					<option value="2000">2</option>
+					<option value="3000">3</option>
+					<option value="4000">4</option>
+					<option value="5000">5</option>
+					<option value="6000">6</option>
+					<option value="7000">7</option>
+					<option value="8000">8</option>
+					<option value="9000">9</option>
+					<option value="10000">10</option>
+					<option value="11000">11</option>
+					<option value="12000">12</option>
+					<option value="13000">13</option>
+					<option value="14000">14</option>
+					<option value="15000">15</option>
+					<option value="16000">16</option>
+					<option value="17000">17</option>
+					<option value="18000">18</option>
+					<option value="19000">19</option>
+					<option value="20000">20</option>
+				</field>
+				<field name="rsm_scroller_ordering" type="list" default="random" label="Testimonial Ordering" description="Ordering of the testimonials">
+					<option value="random">random</option>
+					<option value="date">date (latest first)</option>
+				</field>
+				<field name="rsm_scroller_load" type="list" default="0" label="No. of Testimonials" description="How many testimonial you wish to load in this module?">
+					<option value="0">ALL</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+				</field>		
+				<field name="rsm_scroller_additional" type="textarea" cols="30" rows="5" default="" label="Additional Style" description="You can add additional CSS style for this module here" />
+				<field name="rsm_scroller_char" type="text" default="300" label="Character Limit" description="Specify the maximum number of characters to dispaly. By Default it is 300. Insert 0 to display all characters." />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="rsm_imagedisplay" type="radio" default="0" label="Display Image" description="Select Yes to display 'Image of Submitter'.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="rsm_image_maxw" type="text" default="100" label="Maximum Image Width" description="Specify the maximum width of the image. By Default it is 100." />
+				<field name="rsm_image_maxh" type="text" default="100" label="Maximum Image Height" description="Specify the maximum height of the image. By Default it is 100." />
+				<field name="rsm_imagealignment" type="list" default="0" label="Image alignment" description="Alignment of the image.">
+					<option value="0">Top-Center</option>
+					<option value="1">Top-Left</option>
+					<option value="2">Top-Right</option>
+					<option value="3">Left Float</option>
+					<option value="4">Right Float</option>
+				</field>
+				<field name="rsm_imagedefault" type="list" default="0" label="Default Image" description="Default image in no user iamge found.">
+					<option value="0">Do not display any image.</option>
+					<option value="1">Display Gray-and-White User image.</option>
+					<option value="2">Display Black-Male image.</option>
+					<option value="3">Display Black-Female image.</option>
+				</field>
+				<field name="rsm_image_border" type="text" default="1px solid #DEDEDE" label="Image Border Style" description="Image border style. By Default it is 1px solid #DEDEDE." />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="rsm_aboutdisplay" type="radio" default="0" label="Display Addition Info" description="Select 'YES' to display additional information. Select 'NO' to hide.">
+					<option value="0">NO</option>
+					<option value="1">YES</option>
+				</field>
+				<field name="rsm_urldisplay" type="radio" default="0" label="Display Website" description="Select 'YES' to display website. Select 'NO' to hide website.">
+					<option value="0">NO</option>
+					<option value="1">YES</option>
+				</field>
+				<field name="rsm_datedisplay" type="radio" default="1" label="Display Date" description="Select 'YES' to display Date. Select 'NO' to hide date.">
+					<option value="0">NO</option>
+					<option value="1">YES</option>
+				</field>
+				<field name="rsm_scroller_moredisplay" type="radio" default="0" label="Display 'View More'" description="Select Yes to display 'View More' Link at the end. If you choose 'Yes' please do not forget to specify the following parameter related to 'View More'.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="rsm_scroller_moretext" type="text" default="View More &gt;&gt;" label="'View More' Text" description="Enter the 'View More' text of your choice, example: 'More >>', 'View All' etc. etc." size="30" />
+				<field name="rsm_scroller_morealign" type="list" default="right" label="'View More' Text Alignment" description="Select the alignment of the 'View More' text, by default it is 'right'">
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="right">Right</option>			
+				</field>
+				<field name="rsm_scroller_moreurl" type="text" default="" label="'View More' URL" description="When anyone will click 'View More >>' Link the page will redirect the user to this URL." size="60" />				
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

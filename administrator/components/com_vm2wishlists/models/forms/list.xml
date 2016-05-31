@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_VM2WISHLISTS_FORM_LBL_LIST_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="list_name" type="text"
+                
+            label="COM_VM2WISHLISTS_FORM_LBL_LIST_LIST_NAME"
+            description="COM_VM2WISHLISTS_FORM_DESC_LIST_LIST_NAME" 
+                
+                
+                 required="true" 
+            maxlength="180" /> 
+
+       <field name="list_description" type="textarea"
+            label="COM_VM2WISHLISTS_FORM_LBL_LIST_LIST_DESCRIPTION"
+            description="COM_VM2WISHLISTS_FORM_DESC_LIST_LIST_DESCRIPTION" 
+            filter="safehtml" /> 
+
+       <field name="icon_class" type="list"
+                
+            label="COM_VM2WISHLISTS_FORM_LBL_LIST_ICONCLASS"
+            description="COM_VM2WISHLISTS_FORM_DESC_LIST_ICONCLASS" 
+                 default="vm2w-icon-heart" 
+                 required="true" 
+            	multiple="false">
+                <option value="vm2w-icon-heart">vm2w-icon-heart</option>
+                <option value="vm2w-icon-thumbs-up">vm2w-icon-thumbs-up</option>
+                <option value="vm2w-icon-add">vm2w-icon-add</option>
+                <option value="vm2w-icon-star">vm2w-icon-star</option>
+				<option value="vm2w-icon-star-empty">vm2w-icon-star-empty</option>
+				<option value="vm2w-icon-list">vm2w-icon-list</option>
+				<option value="vm2w-icon-cloud">vm2w-icon-cloud</option>
+				<option value="vm2w-icon-fingers">vm2w-icon-fingers</option>
+        </field> 
+		
+		<field name="privacy" type="list"
+                
+            label="COM_VM2WISHLISTS_FORM_LBL_LIST_PRIVACY"
+            description="COM_VM2WISHLISTS_FORM_DESC_LIST_PRIVACY" 
+                 default="0" 
+                
+                 required="true" 
+            multiple="false">
+                <option value="0">COM_VM2WISHLISTS_PRIVACY_PUBLIC</option>
+                <option value="20">COM_VM2WISHLISTS_PRIVACY_SITEMEMBERS</option>
+                <option value="30">COM_VM2WISHLISTS_PRIVACY_FRIENDS</option>
+                <option value="40">COM_VM2WISHLISTS_PRIVACY_ME</option>
+        </field> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_VM2WISHLISTS_FORM_LBL_LIST_CREATED_BY"
+            description="COM_VM2WISHLISTS_FORM_DESC_LIST_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+	 <field name="forbidcatids" type="text" default="" label="Forbidden Categories" description="Add here comma separated category IDs for product categories that should not be related to that list. Leave empty to ignore" />
+			 <field name="onlycatids" type="text" default="" label="Only Categories" description="Add here comma separated category IDs to set categories that are the only ones that should be concerned by this list" />
+	
+	<field
+        name="adders"
+        type="radio"
+        label="COM_VM2WISHLIST_ADDERS"
+        description="COM_VM2WISHLIST_ADDERS_DESC"
+        class="radio btn-group btn-group-yesno"
+        default="0">
+        <option value="1">JYes</option>
+        <option value="0">JNo</option>
+    </field>
+
+ </fieldset> 
+ 
+ <fieldset name="optionalfields">
+ 	<field
+        name="amz_link"
+        type="radio"
+        label="COM_VM2WISHLIST_AMZLINK"
+        description="COM_VM2WISHLIST_AMZLINK_DESC"
+        class="radio btn-group btn-group-yesno"
+        default="0">
+        <option value="1">JYes</option>
+        <option value="0">JNo</option>
+    </field>
+	<field
+        name="amz_base"
+        type="radio"
+        label="COM_VM2WISHLIST_FORM_AMZBASE"
+        description="COM_VM2WISHLIST_FORM_AMZBASE_DESC"
+        class="radio btn-group"
+        default="name">
+        <option value="sku">Product Sku</option>
+        <option value="name">Product Name</option>
+    </field>
+	<field name="amz_prefix" type="text"
+    	label="COM_VM2WISHLIST_FORM_AMZPREFIX"
+        description="COM_VM2WISHLIST_FORM_AMZPREFIX_DESC" 
+        maxlength="180"
+	/> 
+ </fieldset>
+
+ <fieldset 
+                        name="accesscontrol">
+                       <field name="asset_id" type="hidden" filter="unset" />
+                       <field name="rules"
+                            type="rules"
+                            label="JFIELD_RULES_LABEL"
+                            translate_label="false"
+                            filter="rules"
+                            validate="rules"
+                            class="inputbox"
+                            component="com_vm2wishlists"
+                            section="list"
+                        />
+
+	</fieldset>
+
+</form>

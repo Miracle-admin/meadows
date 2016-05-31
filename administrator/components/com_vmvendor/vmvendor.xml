@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+ 
+	<name>COM_VMVENDOR</name>
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>June 2012</creationDate>
+	<author>Adrien Roussel</author>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>http://www.nordmograph.com</authorUrl>
+	<copyright>Copyright Nordmograph.com 2010-2015 All Rights Reserved</copyright>
+	<license>GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>3.3.5</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>VMVendor component enhances Virtuemart component adding Multivendor abilities. Your site members will now be able to have their own shop as a public vendor profile. They will be able to add (and edit) their products to the Virtuemart catalogue and get paid for their sales (at first with VMVendorPoints as a virtual currency and then get their points changed via Paypal). VMVendor now offers dozen of new exciting features: public vendor profile with products and vendor informations , vendor products RSS , vendor image,  social share buttons and link to CB , Jomsocial or EasySocial if applicable - A private dashboard with own sales , customer contacts (directions and email form), a statistics tab with combo column chart for sales and customers map chart, product reviews manager, taxes and shipment methods management - Product submission form options now include unlimited files and images fields, stock , weight, management, both short and long description and can integrate some other Nordmograph 3rd party VMcustom plugins such as VM2tags or VM2Geolocator . A content plugin shows on the product page a link to the vendor profile, a question to vendor form popup. A VMpayment plugin automatically rewarding vendors with points according to each of their item prices in a confirmed order. A vendorpoints2paypal module allowing vendors to turn their points into cash. A Joomla search plugin to add Vendor profiles to Joomla search results. A module displaying top, latest, random vendors. CB and Jomsocial profile integration plugins are provided even if these profile manager components are not mandatory anymore.  Only requirements are Virtuemart 3+. VMVendor component will install some VMVendor related modules, plugins during the one click installation process.</description>
+ <scriptfile>script.php</scriptfile> 
+	<!-- folder="admin" -->	
+	
+	<!--<update folder="admin">  
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+ 
+	 Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>vmvendor.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>		
+		<folder>assets</folder>
+		<folder>classes</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	
+	
+	<languages>
+		<language tag="en-GB">site/language/en-GB/en-GB.com_vmvendor.ini</language>
+		<language tag="fr-FR">site/language/fr-FR/fr-FR.com_vmvendor.ini</language>
+	</languages>
+	
+	<install folder="admin">
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.sql</file>
+        </sql>
+    </install>
+
+	<uninstall folder="admin">
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+	<update> 
+        <schemas> 
+                <schemapath type="mysql">sql/updates/mysql</schemapath> 
+        </schemas> 
+	</update>
+ 
+	<administration>
+		<!-- Administration Menu Section-->
+		<menu img="components/com_vmvendor/assets/img/vmvendor_icon.png" link="option=com_vmvendor&amp;view=plans" view="plans">COM_VMVENDOR_MAINMENU</menu> 
+		<submenu>
+			<menu link="option=com_vmvendor&amp;view=plans" view="plans" img="class:vmvendor-plans">COM_VMVENDOR_PLANS</menu>
+			<menu link="option=com_vmvendor&amp;view=pointsactivities" view="pointsactivities" img="class:vmvendor-pointsactivities">COM_VMVENDOR_POINTSACTIVITIES</menu>
+			<menu link="option=com_config&amp;view=component&amp;component=com_vmvendor" view="component" img="class:vmvendor-settings">COM_VMVENDOR_OPTIONS</menu>
+        </submenu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="administrator">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>CHANGELOG.php</filename>
+			<filename>controller.php</filename>
+			<filename>vmvendor.php</filename>
+			<!-- SQL files section -->
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>install</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			
+		</files>
+		<languages folder="administrator">
+			<language tag="en-GB">language/en-GB/en-GB.com_vmvendor.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_vmvendor.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="VMVendor compononent Update Site">http://www.nordmograph.com/extensions/updateserver/com_vmvendor-update.xml</server>
+	</updateservers>
+ 
+</extension>

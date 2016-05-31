@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5" type="plugin" group="vmpayment" method="upgrade">
+    <name>AlphaUserpoints</name>
+    <creationDate>May 06 2015</creationDate>
+    <author>Bipin Thakur</author>
+    <authorUrl>http://www.virtuemart.net</authorUrl>
+    <copyright>Copyright (C) 2004-2015 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>3.0.9</version>
+    <description>AlphaUserpoints</description>
+    <files>
+        <filename plugin="alphauserpoints">alphauserpoints.php</filename>
+        <folder>language</folder>
+		<folder>alphauserpoints</folder>
+    </files>
+    <vmconfig>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/plugins/vmpayment/alphauserpoints/alphauserpoints/fields">
+			
+			<field type="text" name="commission" size="50" label="Vendor Commission" description="Percentage of sales that goes to the site admin. This does not actually go to site admin , it is just deducted from the Vendor points reward that goes to vendors. This value can be overriden by the value set in vendor plans." />
+			
+			
+		    <field name="payment_currency" type="vmacceptedcurrency" default="" label="VMPAYMENT_ALPHAUSERPOINTS_CURRENCY" description="VMPAYMENT_ALPHAUSERPOINTS_CURRENCY_DESC" />
+		
+		    <field name="countries" type="vmcountries" scope="com_virtuemart" default="" label="VMPAYMENT_ALPHAUSERPOINTS_COUNTRIES" description="VMPAYMENT_ALPHAUSERPOINTS_COUNTRIES_DESC" />
+		    
+			<field name="min_amount" type="text" label="VMPAYMENT_ALPHAUSERPOINTS_MIN_AMOUNT" description="VMPAYMENT_ALPHAUSERPOINTS_MIN_AMOUNT_EXPLAIN" />
+		    
+			<field name="max_amount" type="text" label="VMPAYMENT_ALPHAUSERPOINTS_MAX_AMOUNT" description="VMPAYMENT_ALPHAUSERPOINTS_MAX_AMOUNT_EXPLAIN" />
+		    
+			<field name="cost_per_transaction" type="text" label="VMPAYMENT_ALPHAUSERPOINTS_COST_PER_TRANSACTION" description="VMPAYMENT_ALPHAUSERPOINTS_COST_PER_TRANSACTION_EXPLAIN" />
+		    
+			<field name="cost_percent_total" type="text" label="VMPAYMENT_ALPHAUSERPOINTS_COST_PERCENT_TOTAL" description="VMPAYMENT_ALPHAUSERPOINTS_COST_PERCENT_TOTAL_EXPLAIN" />
+		    
+			<field name="tax_id" type="vmtaxes" scope="com_virtuemart" label="VMPAYMENT_ALPHAUSERPOINTS_TAX" description="VMPAYMENT_ALPHAUSERPOINTS_TAX_EXPLAIN" />
+		
+		    <field name="status_pending" type="vmorderstate" scope="com_virtuemart" default="P" label="VMPAYMENT_ALPHAUSERPOINTS_STATUS_PENDING" description="VMPAYMENT_ALPHAUSERPOINTS_STATUS_PENDING_EXPLAIN" />
+		    
+			<field name="status_success" type="vmorderstate" scope="com_virtuemart" default="C" label="VMPAYMENT_ALPHAUSERPOINTS_STATUS_SUCCESS" description="VMPAYMENT_ALPHAUSERPOINTS_STATUS_SUCCESS_EXPLAIN" />
+		    
+			<field name="status_canceled" type="vmorderstate" scope="com_virtuemart" default="X" label="VMPAYMENT_ALPHAUSERPOINTS_STATUS_FAILED" description="VMPAYMENT_ALPHAUSERPOINTS_STATUS_FAILED_EXPLAIN" />
+		
+		    <field name="debug" type="radio" default="0" label="VMPAYMENT_ALPHAUSERPOINTS_DEBUG" description="VMPAYMENT_ALPHAUSERPOINTS_DEBUG_DESC">
+			<option value="0">COM_VIRTUEMART_NO</option>
+			<option value="1">COM_VIRTUEMART_YES</option>
+		    </field>
+			
+
+            </fieldset>
+        </fields>
+    </vmconfig>
+    <updateservers>
+        
+        <server type="extension" name="VirtueMart plg_vmpayment_alphauserpoints Update Site"><![CDATA[http://virtuemart.net/releases/vm3/plg_vmpayment_alphauserpoints_update.xml]]></server></updateservers>
+
+</extension>

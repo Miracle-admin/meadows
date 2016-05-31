@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="galleria-1.2.6.js"></script>
+    </head>
+    <body>
+        <div id="gallery">
+            <img src="photo1.jpg">
+            <img src="photo2.jpg">
+            <img src="photo3.jpg">
+        </div>
+        <script>
+            Galleria.loadTheme('themes/classic/galleria.classic.min.js');
+			
+			var data = [
+				{
+					image: 'photo1.jpg',
+					title: 'my first image',
+					description: 'Lorem ipsum caption',
+					link: 'http://domain.com'
+				},
+				{
+					image: 'photo3.jpg',
+					title: 'my second image',
+					description: 'Another caption',
+					link: '/path/to/destination.html'
+				}
+			];
+
+			
+            $("#gallery").galleria({
+				data_source: data,
+                width: 500,
+                height: 300,
+				thumbnails: "numbers",
+				maxScaleRatio: 100,
+				autoplay: 2000
+
+            });
+        </script>
+    </body>
+</html>

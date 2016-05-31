@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <view title="Catalog per Type">
+  <message><![CDATA[Specify a type. It could be either the item type ID or it can be the designation ( eg: item, product, auction, etc... )<br>]]></message>
+ </view>
+</metadata>

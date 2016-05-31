@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="plugin" version="2.5" method="upgrade" group="acymailing">
+	<name>AcyMailing Tag : Appmeadows subscription tags</name>
+	<creationDate>octobre 2014</creationDate>
+	<version>4.8.1</version>
+	<author>Bipin Thakur</author>
+	<authorEmail>bipin.singh@miraclegroup.com</authorEmail>
+	<authorUrl>http://www.acyba.com</authorUrl>
+	<copyright>Copyright (C) 2009-2014 ACYBA SARL - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<description>This plugin enables you to add Appmeadows subscriptions related tags, Which i am sure is a magic</description>
+	<files>
+		<filename plugin="tagapmsubscription">tagapmsubscription.php</filename>
+	</files>
+	
+</extension>

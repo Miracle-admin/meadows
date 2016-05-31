@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="List of All Categories">
+  <message><![CDATA[A list of all categories. By defining a different eid value you can define the list of sub-categories.<br>eid is the category ID.]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="catalog" label="controller" description=""/>
+   <field name="task" type="text" default="category" label="task" description=""/>
+   <field name="eid" type="text" default="" label="eid" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

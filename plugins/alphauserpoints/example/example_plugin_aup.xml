@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="alphauserpoints" method="upgrade">
+	<name>AlphaUserPoints - Example Plugin for AlphaUserPoints</name>
+	<author>Bernard Gilly</author>
+	<creationDate>2013 June 17</creationDate>
+	<copyright>(C) 2008-2015. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>www.alphaplug.com</authorEmail>
+	<authorUrl>www.alphaplug.com</authorUrl>
+	<version>1.9.0</version>
+	<description>Example Plugin to handle events triggered by AlphaUserPoints and used by other extensions.</description>
+	<files>
+		<filename plugin="example_plugin_aup">example_plugin_aup.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

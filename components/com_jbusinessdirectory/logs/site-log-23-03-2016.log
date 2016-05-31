@@ -1,0 +1,4 @@
+2016-03-23 11:44:17 - DEBUG --> E-mail with subject New Business Listing sent from office@site.com to office@site.com a:0:{} result:Could not instantiate mail function. 
+2016-03-23 11:44:18 - DEBUG --> E-mail with subject Your business was added on our directory sent from office@site.com to asdfg@ghjkl.com a:0:{} result:Could not instantiate mail function. 
+2016-03-23 11:45:37 - DEBUG --> E-mail with subject New Business Listing sent from office@site.com to office@site.com a:0:{} result:Could not instantiate mail function. 
+2016-03-23 11:45:38 - DEBUG --> E-mail with subject Your business was added on our directory sent from office@site.com to office@site.com a:0:{} result:Could not instantiate mail function. 

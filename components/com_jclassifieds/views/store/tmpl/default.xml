@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Store">
+  <message><![CDATA[This link to the catalog or homepage of the store.<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jclassifieds">
+   <field name="controller" type="text" default="catalog" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

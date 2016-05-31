@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="My offers">
+  <message><![CDATA[Link to the cart or basket of the store.<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jclassifieds">
+   <field name="controller" type="text" default="classified-myoffers" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

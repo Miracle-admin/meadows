@@ -1,0 +1,2 @@
+INSERT INTO `#__jbusinessdirectory_emails` (`email_id`, `email_subject`, `email_name`, `email_type`, `email_content`, `is_default`) VALUES
+(5, 'You have been contacted on JBusinessDirectory', 'Contact E-Mail', 'Contact Email', 0x3c703e4e616d653a5b66697273745f6e616d655d205b6c6173745f6e616d655d3c6272202f3e452d6d61696c3a205b636f6e746163745f656d61696c5d3c6272202f3e3c6272202f3e5b636f6e746163745f656d61696c5f636f6e74656e745d3c2f703e, 1);

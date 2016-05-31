@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="vmshopper">
+	<name>Vm Register</name>
+	<author>Bipin Thakur</author>
+	<creationDate>November 2005</creationDate>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.1.0</version>
+	<description>Plugin fires when a user registers through virtuemart</description>
+	<files>
+		<filename plugin="vmregister">vmregister.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+</extension>

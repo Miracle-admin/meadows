@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="My Returns">
+  <message>This will link the users to the list of their returns</message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jauction">
+   <field name="controller" type="text" default="order-myrefunds" label="controller" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

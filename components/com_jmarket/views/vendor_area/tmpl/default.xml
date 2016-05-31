@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Vendor Area">
+  <message><![CDATA[Vendor menu. Link to the vendor area<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jmarket">
+   <field name="controller" type="text" default="vendors-area" label="controller" description=""/>
+   <field name="space" type="text" default="vendors" label="space" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

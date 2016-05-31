@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_J_BUSINESSDIRECTORY_MENUITEM_OFFERS">
+		<message>COM_J_BUSINESSDIRECTORY_MENUITEM_OFFERS_INFO</message>
+	</layout>
+	<state>
+		<name>controller</name>
+		<description>descr</description>
+		<url>
+			<param name="controller" type="hidden" default="offers" />
+		</url>
+	</state>
+</metadata>

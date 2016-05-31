@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="mainfields">
+		<field 
+            name="formname" 
+            type="text" 
+            label="COM_VMVENDOR_ASKVENDOR_YOURNAME" 
+            description="" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  />
+		<field 
+            name="formemail" 
+            type="email" 
+            label="COM_VMVENDOR_ASKVENDOR_YOURMAIL" 
+            description="" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  />     
+		<field 
+            name="formsubject" 
+            type="text" 
+            label="COM_VMVENDOR_ASKVENDOR_SUBJECT" 
+            description="" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  />        
+		<field 
+			name="formmessage" 
+			type="textarea" 
+			class="inputbox required" 
+			label="COM_VMVENDOR_ASKVENDOR_MESSAGE" 
+			description="" 
+			filter="safehtml" 
+			height="200" 
+			rows="2" 
+			required="true"  />
+		
+    </fieldset>
+</form>

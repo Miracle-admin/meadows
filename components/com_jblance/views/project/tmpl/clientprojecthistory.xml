@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Client - Project History.">
+		<message>
+			Show the complete project history of a client.
+		</message>
+	</layout>
+	<state>
+		<name>Client - Project History.</name>
+		<description>Project history of a client.</description>
+	</state>
+</metadata>

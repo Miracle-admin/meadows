@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <view title="Display One Product">
+  <message>Display one product. Specify the eid, the ID of the product.</message>
+ </view>
+</metadata>

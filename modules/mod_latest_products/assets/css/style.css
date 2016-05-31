@@ -1,0 +1,87 @@
+.steps ul li {
+    float: left;
+    text-align: center;
+    width: 194px;
+    list-style: outside none none;
+}
+
+.active .point, .active .name-step ,.valid .point, .valid .name-step{
+    background-color: #143a49 !important;
+    color: #143a49 !important;
+}
+.steps ul li .point {
+    background-color: #ccc;
+    border-radius: 100px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.steps ul li a .name-step {
+    background-color: #143a49;
+    color: #143a49;
+}
+.steps ul li .name-step {
+    background-color: transparent !important;
+    color: #ccc;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+}
+.line {
+    border: 1px solid;
+    color: #e2e2e2;
+    height: 0;
+    left: 110px;
+    position: absolute;
+    top: 374px;
+    width: 756px;
+    z-index: -1;
+}
+
+.steps {
+    clear: both;
+    float: left;
+    padding: 68px 0 25px;
+    width: 100%;
+}
+.upselling-projects li
+{
+    list-style:none;
+}
+.btn.green.with-icon {
+    background: green none repeat scroll 0 0;
+    border: 1px solid green;
+    color: #fff;
+}
+
+.fright {
+    clear: both;
+}
+
+.btn.green.fright {
+    background: green none repeat scroll 0 0;
+    border: 1px solid green;
+    color: white;
+}
+.box-project-dashboard.white-box {
+    float: left;
+}
+
+.small-box.white-box {
+    border: 1px solid;
+    float: right;
+    padding: 26px 10px;
+}
+.widget-project-owner {
+
+    float: left;
+    height: 165px;
+    padding: 23px 24px;
+    width: 715px;
+}
+.no_bids {
+    color: red;
+    float: left;
+    font-weight: bold;
+}

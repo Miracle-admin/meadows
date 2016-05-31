@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="appmeadows">
+    <name>Braintree New subscription - subscriptionupdates</name>
+    <author>Bipin Thakur</author>
+    <creationDate>September 15, 2015</creationDate>
+    <copyright>(C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>bipin.singh@emptask.com</authorEmail>
+    <authorUrl>www.joomla.org</authorUrl>
+    <version>1.0</version>
+    <description>This plugin is used to update the subscription details of an user,It invokes whenever a new subscription is purchased.</description>
+    <files>
+        <filename plugin="subscriptionupdates">subscriptionupdates.php</filename>
+    </files>
+    <config/>
+</extension>

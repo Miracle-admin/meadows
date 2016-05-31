@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="content" method="upgrade">
+    <name>Content - VMVendor Vendor Link</name>
+    <creationDate>June 2012</creationDate>
+    <author>Nordmograph studio</author>
+    <authorUrl>http://www.nordmograph.com</authorUrl>
+    <copyright>Copyright (C) 2004-2011 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.1</version>
+    <description>This plugin shows on the Virtuemart2 product details page, the Vendor name and a link to vendor profile if applicable (CB , Jomsocial or AUP). It can also show a 'Ask a question about this product' using either the Easysocial's or Jomsocial PM cWindow or a Email form. Options for this plugin are in the VMVendor component config page.</description>
+    <languages>
+		 <language tag="en-GB">en-GB.plg_content_vmvendor_vendorlink.ini</language>
+		 <language tag="fr-FR">fr-FR.plg_content_vmvendor_vendorlink.ini</language>
+    </languages>
+    <files>
+        <filename plugin="vmvendor_vendorlink">vmvendor_vendorlink.php</filename>
+		<folder>css</folder>
+		<folder>fonts</folder>
+    </files>
+	 <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="linkto" type="radio" default="1" label="Link vendor name to" description="Vendor profile is the VMVendor profile, User profile is the CB, Jomsocial or AUP profile." class="radio btn-group btn-group-yesno">
+						<option value="0">No link</option>
+						<option value="1">Vendor profile</option>
+						<option value="2">User profile</option>
+					</field>
+					<field name="show_deletebutton" type="radio" default="1" label="Show Delete Button" description="This will enable showing a product delte button to product vendor allowing vendor to delete product, not only from vendor profile , but also from product details page" class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>	
+				</field>
+					<field name="questionform" type="list" default="1" label="Question form" description="Ask a question about this product. If you enable this , make sure you disable the default one. Private Messaging requires you have Jomsocial or EasySocial installed" >
+						<option value="0">JNo</option>
+						<option value="1">Email to Vendor</option>
+						<option value="2">Private Messaging (JS or ES required) to Vendor</option>
+					</field>
+					
+					<field name="show_rating" type="radio" default="1" label="Show Rating" description="This will enable showing rating stars (only if rating is not null)" class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>	
+				</field>
+				
+				
+					
+				<field name="load_jquery" type="radio" default="1" label="Load jQuery" description="Load or not additional jQuery javascript library. Not required if your site template has it loaded allready. It is required by this plugin if you use the email form to question vendor. It is not required if you use the Jomsocial Private message form" class="radio btn-group btn-group-yesno">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>	
+				</field>
+			
+				<field name="jquery_url" type="text" default="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" label="jQuery URL" description="" size="100" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

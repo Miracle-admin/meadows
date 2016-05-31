@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+iframe {
+	height:100%;
+	border:none;
+}
+#addedby{
+	width:70%;
+	float:left;
+}
+#modal-askvendor{
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	z-index: 10500;
+	width: 600px;
+}
+#follow_vendor{
+	float:left;	
+}
+#questionto {
+	float:right;
+}
+#questionto a {
+	text-decoration:none;
+}
+#addedby_text{
+	float:left;
+}
+#vendor_rating{
+	float:left;
+}
+#delete_product{
+	width:55px;	
+	float:left;
+}
+.modal-dialog{
+	left:0;
+}
+.modal-body{
+	height:400px;
+}

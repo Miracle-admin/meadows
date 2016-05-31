@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_J_BUSINESSDIRECTORY_MENUITEM_BUSINESS_LISTINGS">
+		<message>
+			<![CDATA[COM_J_BUSINESSDIRECTORY_MENUITEM_BUSINESS_LISTINGS_INFO]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_jbusinessdirectory/models/fields">
+			<field
+					name="categoryId"
+					type="businesscategories"
+					multiple="false"
+					size="10"
+					default=""
+					label="Category"
+					description="Select category" >
+				</field>
+				
+				<field
+					name="citySearch"
+					type="businesscities"
+					multiple="false"
+					size="10"
+					default=""
+					label="City"
+					description="Select city" >
+				</field>	
+				
+				<field
+					name="regionSearch"
+					type="text"
+					label="Region"
+					description="Enter the name of the region" />
+			
+				<field name="featured" type="radio" class="btn-group btn-group-yesno" default="0" label="Only featured" description="Only featured listing will be shown">
+				  <option value="0">No</option>
+				  <option value="1">Yes</option>
+				</field>
+			
+				<field name="resetSearch" type="radio" class="btn-group btn-group-yesno" default="1" label="Reset search" description="Reset search when the menu item is accessed">
+				  <option value="0">No</option>
+				  <option value="1">Yes</option>
+				</field>
+		</fieldset>
+	</fields>
+</metadata>
+	

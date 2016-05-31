@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Deposit credits">
+		<message>
+			<![CDATA[Deposit credits]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="type"
+				type="hidden"
+				default="deposit"
+			>
+				
+			</field>
+		</fieldset>
+	</fields>
+	
+
+</metadata>

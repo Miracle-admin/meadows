@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Subscribe">
+  <message></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jaffiliates">
+   <field name="controller" type="text" default="affiliate" label="controller" description=""/>
+   <field name="task" type="text" default="subscribe" label="task" description=""/>
+   <field name="eid" type="text" default="1" label="eid" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

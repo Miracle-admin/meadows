@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+ <layout title="Store">
+  <message><![CDATA[This link to the Homepage of jAuction.<br>]]></message>
+ </layout>
+ <fields name="request">
+  <fieldset name="request" addfieldpath="components/com_jauction">
+   <field name="controller" type="text" default="catalog" label="controller" description=""/>
+   <field name="task" type="text" default="home" label="task" description=""/>
+   <field name="type" type="text" default="auction" label="type" description=""/>
+  </fieldset>
+ </fields>
+</metadata>

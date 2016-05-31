@@ -1,0 +1,4 @@
+2016-02-19T06:58:17+00:00	INFO 127.0.0.1	credit_info	User: shopper45 added $246.00 for purchasing Grand Theft Auto San Andreas
+2016-02-19T06:58:17+00:00	INFO 127.0.0.1	credit_info	Order no: e7400453 Message: Order successfully processed, placed by: shopper45(690) vendor: developer2 (620) Amount paid by buyer: $246 Amount paid to vendor: $148($148 - 40% Appmeadows Commission) Product: Grand Theft Auto San Andreas
+2016-02-19T07:11:52+00:00	INFO 127.0.0.1	credit_info	User: shopper45 added $123.00 for purchasing Grand Theft Auto San Andreas
+2016-02-19T07:11:52+00:00	INFO 127.0.0.1	credit_info	Order no: da1b0454 Message: Order successfully processed, placed by: shopper45(690) vendor: developer2 (620) Amount paid by buyer: $123 Amount paid to vendor: $74($74 - 40% Appmeadows Commission) Product: Grand Theft Auto San Andreas

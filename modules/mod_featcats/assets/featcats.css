@@ -1,0 +1,115 @@
+/*------------------------------------------------------------------------
+# mod_featcats - Featured Categories
+# ------------------------------------------------------------------------
+# author    Jesús Vargas Garita
+# Copyright (C) 2010 www.joomlahill.com. All Rights Reserved.
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://www.joomlahill.com
+# Technical Support:  Forum - http://www.joomlahill.com/forum
+-------------------------------------------------------------------------*/
+
+ul.featcats, ul.fc_leading {
+	margin: 0!important;
+	padding: 0!important;
+	list-style: none!important;
+	list-style-type: none!important;
+}
+li.featcat {
+	background: none!important;
+	float: left;
+	padding: 0 8px 15px!important;
+	position: relative;
+}
+li.featcat h1, li.featcat h2, li.featcat h3, li.featcat h4, li.featcat h5, li.featcat h6 {
+	margin-top: 0!important;
+	padding-top: 0!important;
+}
+.fc_leading li {
+	border-top: 1px solid #DDDDDD;
+	padding: 10px 0!important;
+	background: none!important;
+}
+.fc_leading li:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.fc_leading li:first-child {
+	padding-top: 0;
+	border: none;
+}
+li.featcat_clr {
+	clear: both;
+}
+ul.fc_leading img {
+	float: left;
+	margin-right: 10px;
+}
+.fc_writtenby, .fc_date {
+	display: inline-block;
+	font-size: 80%;	
+	padding: 5px 0;
+}
+.fc_links .fc_writtenby, .fc_links .fc_date { padding: 0; }
+.fc_links li a { display: block; }
+.date-and-author:before {
+	content: " | ";
+}
+li.featcat > a.fc_more {
+	display: block;
+	float: right;
+}
+li.fc_more {}
+.fc_ajax {position:relative;}
+.fc_items:after, .clearafter:after {
+	clear: both;
+	content: '.';
+	display: block;
+	height: 0;
+	line-height: 0;
+	font-size:0;
+	visibility: hidden;
+}
+.fc_pag {
+	height: 18px;
+	line-height: 18px;
+	padding: 10px 5px 0;
+	text-align: right;
+}
+.fc_pag span {
+	color: #CCC;
+	border: 1px solid #CCC;
+	border-radius: 9px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 9px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	width: 16px;
+	margin: 0 -1px;
+}
+.fc_pag span.totalcount {
+	border: none;
+	cursor: default;
+}
+.fc_pag li span:hover, .fc_pag span.current {
+	color: #000;
+	background-color: rgb(250, 255, 189);
+}
+.fc_pag span.totalcount:hover {
+	color: #CCC;
+	background: none;
+}
+.fc_loading { 
+	left: 0;
+    position: absolute;
+	text-align: center; 
+	top: 0;
+	width: 100%;
+}
+.featcats .firstcol {
+	margin-left: 0!important;
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="module" client="administrator">
+    <name>Component Listing</name>
+    <author>Codeboxr</author>
+    <creationDate>24.11.2011</creationDate>
+    <copyright>Copyright (C) 2008-2014 codeboxr.com</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>sabuj@codeboxr.com</authorEmail>
+    <authorUrl>http://codeboxr.com</authorUrl>
+    <version>3.0.1</version>
+    <description>This module shows all components as a list on the Admin area(publish it in position:cpanel for khepri template) Home Page</description>
+    <files>
+            <filename module="mod_quickcomponent">mod_quickcomponent.php</filename>
+            <filename>index.html</filename>
+            <filename>helper.php</filename>
+    </files>
+    <config>
+        <fields>
+            <field name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+                <option value="1">Use global</option>
+                <option value="0">No caching</option>
+            </field>
+            <field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+        </fields>
+    </config>
+</extension>
